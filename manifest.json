@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "随口记 · 语音备忘录",
+  "short_name": "随口记",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f5fb",
+  "theme_color": "#145bea",
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
