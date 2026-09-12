@@ -16,37 +16,26 @@
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 main{max-width:720px;margin:auto;padding:calc(16px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
 header,.row{display:flex;align-items:center;justify-content:space-between;gap:12px}
-header{margin-bottom:16px}
-h1{font-size:25px;letter-spacing:-.7px;margin:0}
-h2{font-size:17px;margin:0}
-p{margin:8px 0}
-small,.hint{color:var(--muted);font-size:13px}
-.brand-note{font-size:11px;letter-spacing:2px;color:var(--muted)}
+header{margin-bottom:16px}h1{font-size:25px;letter-spacing:-.7px;margin:0}h2{font-size:17px;margin:0}p{margin:8px 0}
+small,.hint{color:var(--muted);font-size:13px}.brand-note{font-size:11px;letter-spacing:2px;color:var(--muted)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:12px}
 button,input,textarea,select{font:inherit}
 button{min-height:48px;border:0;border-radius:11px;padding:10px 15px;background:var(--soft);color:var(--text);cursor:pointer;touch-action:manipulation}
 button:disabled{opacity:.45;cursor:default}
 button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #91b3ff;outline-offset:3px}
 input:not([type=checkbox]),textarea,select{width:100%;padding:11px 12px;border:1px solid var(--line);background:#f8faff;color:var(--text);border-radius:10px;font-size:16px}
-label.field{display:block;margin:12px 0 6px}
-textarea{height:112px;min-height:90px;resize:vertical;line-height:1.7}
+label.field{display:block;margin:12px 0 6px}textarea{height:112px;min-height:90px;resize:vertical;line-height:1.7}
 summary{min-height:44px;cursor:pointer;font-weight:600;align-content:center}
 #summaryText{margin-top:10px;white-space:pre-wrap;overflow-wrap:anywhere}
-.empty{color:var(--muted)}
-.switch{display:flex;align-items:center;gap:7px;font-size:13px;white-space:nowrap}
+.empty{color:var(--muted)}.switch{display:flex;align-items:center;gap:7px;font-size:13px;white-space:nowrap}
 .switch input{appearance:none;-webkit-appearance:none;position:relative;width:35px;height:21px;background:#ccd5e3;border-radius:20px;margin:0}
 .switch input:before{content:"";position:absolute;left:3px;top:3px;width:15px;height:15px;border-radius:50%;background:white;transition:transform .15s}
-.switch input:checked{background:var(--brand)}
-.switch input:checked:before{transform:translateX(14px)}
-.task{display:flex;align-items:center;gap:9px;min-height:66px;border-bottom:1px solid var(--line);background:white;border-radius:10px;margin-top:8px;padding:0 5px}
-.task.due-red{background:#fff0f0}
-.task.due-yellow{background:#fff8dc}
-.task.due-blue{background:#edf5ff}
-.task.due-green{background:#eef9ef}
-.task.done{background:#fff}
+.switch input:checked{background:var(--brand)}.switch input:checked:before{transform:translateX(14px)}
+.task{display:flex;align-items:center;gap:9px;min-height:66px;border-bottom:1px solid var(--line);background:white}
+.task{border-radius:10px;margin-top:8px;padding:0 5px}
+.task.due-red{background:#fff0f0}.task.due-yellow{background:#fff8dc}.task.due-blue{background:#edf5ff}.task.due-green{background:#eef9ef}.task.done{background:#fff}
 .task .deadline{display:inline-block;margin-top:4px;font-size:13px;color:inherit;background:transparent;border:1px solid #00000012;border-radius:5px;padding:1px 6px}
-.task:last-child{border-bottom:0}
-.task-check{width:44px;min-height:48px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.task:last-child{border-bottom:0}.task-check{width:44px;min-height:48px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .task-check input{width:23px;height:23px;accent-color:var(--brand)}
 .task-text{flex:1;min-width:0;padding:10px 0;overflow-wrap:anywhere;white-space:pre-wrap;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 .task.done .task-text{color:#8c96a6;text-decoration:line-through}
@@ -56,168 +45,102 @@ mark{background:#fff1ca;color:#8b5a0c;border-radius:4px;padding:1px 4px}
 .task.dragging{position:relative;z-index:2;background:#edf3ff;box-shadow:0 4px 16px #245edb20;outline:2px solid #b7ccfa;border-radius:10px}
 #record{width:100%;min-height:66px;background:var(--brand);color:white;font-size:18px;font-weight:600;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 #record.holding{background:#b93649}
-.record-area{margin:16px 0}
-.wide{width:100%;margin-top:10px}
+.record-area{margin:16px 0}.wide{width:100%;margin-top:10px}
 #status{font-size:14px;color:var(--muted);min-height:23px;margin:8px 0;overflow-wrap:anywhere}
 #interim{font-size:14px;color:var(--brand);white-space:pre-wrap;overflow-wrap:anywhere}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.actions>*{flex:1}
-.danger{color:var(--danger)}
-.history-item{display:flex;gap:8px;margin-top:10px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.actions>*{flex:1}
+.danger{color:var(--danger)}.history-item{display:flex;gap:8px;margin-top:10px}
 .history-item .open{flex:1;min-width:0;background:#f8faff;text-align:left}
 .open strong{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .history-item.active .open{box-shadow:inset 3px 0 var(--brand)}
-#search{margin-top:12px}
-#beforeCorrection{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;color:var(--muted)}
+#search{margin-top:12px}#beforeCorrection{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;color:var(--muted)}
 dialog{border:1px solid var(--line);border-radius:18px;padding:22px;width:min(92vw,420px);color:var(--text)}
-dialog::backdrop{background:#1b294560}
-#taskMenuText{white-space:pre-wrap;overflow-wrap:anywhere}
+dialog::backdrop{background:#1b294560}#taskMenuText{white-space:pre-wrap;overflow-wrap:anywhere}
 [hidden]{display:none!important}
-@media(max-width:360px){
-  .card{padding:14px}
-  .row{gap:6px}
-  button{padding:10px 12px}
-  .switch{font-size:12px}
-}
-@media(prefers-reduced-motion:reduce){
-  *{scroll-behavior:auto!important;transition:none!important}
-}
+@media(max-width:360px){.card{padding:14px}.row{gap:6px}button{padding:10px 12px}.switch{font-size:12px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <div>
-      <div class="brand-note">VOICE NOTES</div>
-      <h1>随口记</h1>
-    </div>
-    <button id="new">＋ 新建</button>
-  </header>
+<header>
+<div><div class="brand-note">VOICE NOTES</div><h1>随口记</h1></div>
+<button id="new">＋ 新建</button>
+</header>
 
-  <section class="card" aria-labelledby="todoTitle">
-    <div class="row">
-      <h2 id="todoTitle">待办清单 <small id="count"></small></h2>
-      <label class="switch">
-        <input id="hideDone" type="checkbox" role="switch">
-        隐藏已完成
-      </label>
-    </div>
-    <div id="todos"></div>
-    <p class="hint">长按右侧 ⠿ 拖动排序；长按任务文字删除。</p>
-    <div class="row">
-      <h2 id="summaryTitle">本条摘要</h2>
-      <small id="saved">尚未保存</small>
-    </div>
-    <p id="summaryText" class="empty">按住下方按钮，新建一条口述记录。</p>
-  </section>
+<section class="card" aria-labelledby="todoTitle">
+<div class="row">
+<h2 id="todoTitle">待办清单 <small id="count"></small></h2>
+<label class="switch"><input id="hideDone" type="checkbox" role="switch">隐藏已完成</label>
+</div>
+<div id="todos"></div>
+<p class="hint">长按右侧 ⠿ 拖动排序；长按任务文字删除。</p>
+<div class="row"><h2 id="summaryTitle">本条摘要</h2><small id="saved">尚未保存</small></div>
+<p id="summaryText" class="empty">按住下方按钮，新建一条口述记录。</p>
+</section>
 
-  <section class="record-area" aria-label="语音录入">
-    <button id="record" aria-pressed="false">按住说话 · 松开整理</button>
-    <p id="status" role="status" aria-live="polite">
-      松手后自动纠错、生成摘要与待办。
-    </p>
-    <p id="interim" aria-live="polite"></p>
-    <button id="generate" class="wide">生成摘要&amp;提取待办</button>
-    <button id="cancel" class="wide" hidden>取消生成</button>
-  </section>
+<section class="record-area" aria-label="语音录入">
+<button id="record" aria-pressed="false">按住说话 · 松开整理</button>
+<p id="status" role="status" aria-live="polite">松手后自动纠错、生成摘要与待办。</p>
+<p id="interim" aria-live="polite"></p>
+<button id="generate" class="wide">生成摘要&amp;提取待办</button>
+<button id="cancel" class="wide" hidden>取消生成</button>
+</section>
 
-  <details class="card" id="rawPanel">
-    <summary>当前口述原文 · 点击核对</summary>
-    <p id="recordTime" class="hint"></p>
-    <label for="raw" class="field">原文（可编辑，也可使用键盘听写）</label>
-    <textarea id="raw" placeholder="语音识别文字会出现在这里……"></textarea>
-    <div class="actions">
-      <button id="clearRaw" class="danger">清空原文</button>
-    </div>
-    <p class="hint">
-      这里只编辑当前选中的记录。每次按住说话都会新建记录，旧记录自动归档。
-      AI 纠错后请核对姓名、数字和日期。
-    </p>
-    <details id="originalPanel" hidden>
-      <summary>本次语音最初识别文本</summary>
-      <p id="originalSpeech" style="white-space:pre-wrap;overflow-wrap:anywhere"></p>
-    </details>
-    <details id="correctionPanel" hidden>
-      <summary>查看最近一次纠错前文本</summary>
-      <p id="beforeCorrection"></p>
-      <button id="restoreRaw">恢复纠错前文本</button>
-    </details>
-  </details>
+<button id="newRecord" class="wide" style="margin:0 0 12px">＋ 新建口述记录</button>
+<details class="card" id="rawPanel">
+<summary>当前口述原文 · 点击核对</summary>
+<p id="recordTime" class="hint"></p>
+<label for="raw" class="field">原文（可编辑，也可使用键盘听写）</label>
+<textarea id="raw" placeholder="语音识别文字会出现在这里……"></textarea>
+<div class="actions"><button id="clearRaw" class="danger">清空原文</button></div>
+<p class="hint">录音会追加到当前这组口述。点击“新建口述记录”或刷新、重新打开页面后，将开启新的一组。点击历史卡片可以继续补充该组记录。</p>
+<details id="originalPanel" hidden><summary>本次语音最初识别文本</summary><p id="originalSpeech" style="white-space:pre-wrap;overflow-wrap:anywhere"></p></details>
+<details id="correctionPanel" hidden>
+<summary>查看最近一次纠错前文本</summary>
+<p id="beforeCorrection"></p>
+<button id="restoreRaw">恢复纠错前文本</button>
+</details>
+</details>
 
-  <details class="card" id="historyPanel">
-    <summary>历史记录 · 点击展开</summary>
-    <div class="row">
-      <small>每次录音独立归档</small>
-      <button id="export">导出全部 TXT</button>
-    </div>
-    <label for="search" class="field">搜索备忘录</label>
-    <input id="search" type="search"
-      placeholder="搜索原文、摘要、待办或时间" autocomplete="off">
-    <div id="history"></div>
-  </details>
-
-  <p class="hint">
-    本机保存，不跨设备同步。请定期导出；清理网站数据会删除记录。
-    离线可查看和编辑，语音与 AI 通常需要联网。
-  </p>
-
-  <details class="card" id="settings">
-    <summary>API 配置</summary>
-    <label for="provider" class="field">服务</label>
-    <select id="provider">
-      <option value="deepseek">DeepSeek / OpenAI 兼容</option>
-      <option value="ollama">Ollama（OpenAI 兼容接口）</option>
-    </select>
-
-    <label for="key" class="field">API Key</label>
-    <input id="key" type="password" autocomplete="off"
-      autocapitalize="none" spellcheck="false"
-      placeholder="DeepSeek 必填；本地 Ollama 可留空">
-
-    <label for="base" class="field">API Base 地址</label>
-    <input id="base" type="url" value="https://api.deepseek.com/v1"
-      autocomplete="off" autocapitalize="none" spellcheck="false">
-
-    <label for="model" class="field">模型</label>
-    <input id="model" value="deepseek-v4-flash"
-      autocomplete="off" autocapitalize="none" spellcheck="false">
-
-    <p class="hint">
-      密钥仅保存在本机，调用时与当前原文一起发送到配置的 API。请只使用可信地址。
-    </p>
-    <p class="hint" id="ollamaHint" hidden>
-      填写 Ollama 中已安装的模型和可访问的 /v1 地址。
-      iPhone 的 localhost 指手机自身。
-      HTTPS 页面需要可访问的 HTTPS Ollama 代理及正确的 CORS 配置。
-    </p>
-    <div class="actions">
-      <button id="saveConfig">保存配置</button>
-      <button id="clearKey">清除密钥</button>
-    </div>
-  </details>
+<details class="card" id="historyPanel">
+<summary>历史记录 · 点击展开</summary>
+<div class="row"><small>按口述记录分组归档</small><button id="export">导出全部 TXT</button></div>
+<label for="search" class="field">搜索备忘录</label>
+<input id="search" type="search" placeholder="搜索原文、摘要、待办或时间" autocomplete="off">
+<div id="history"></div>
+</details>
+<p class="hint">本机保存，不跨设备同步。请定期导出；清理网站数据会删除记录。离线可查看和编辑，语音与 AI 通常需要联网。</p>
+<details class="card" id="settings">
+<summary>API 配置</summary>
+<label for="provider" class="field">服务</label>
+<select id="provider"><option value="deepseek">DeepSeek / OpenAI 兼容</option><option value="ollama">Ollama（OpenAI 兼容接口）</option></select>
+<label for="key" class="field">API Key</label>
+<input id="key" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="DeepSeek 必填；本地 Ollama 可留空">
+<label for="base" class="field">API Base 地址</label>
+<input id="base" type="url" value="https://api.deepseek.com/v1" autocomplete="off" autocapitalize="none" spellcheck="false">
+<label for="model" class="field">模型</label>
+<input id="model" value="deepseek-v4-flash" autocomplete="off" autocapitalize="none" spellcheck="false">
+<p class="hint">密钥仅保存在本机，调用时与当前原文一起发送到配置的 API。请只使用可信地址。</p>
+<p class="hint" id="ollamaHint" hidden>填写 Ollama 中已安装的模型和可访问的 /v1 地址。iPhone 的 localhost 指手机自身。HTTPS 页面需要可访问的 HTTPS Ollama 代理及正确的 CORS 配置。</p>
+<div class="actions"><button id="saveConfig">保存配置</button><button id="clearKey">清除密钥</button></div>
+</details>
 </main>
 
 <dialog id="taskMenu" aria-labelledby="taskMenuTitle">
-  <h2 id="taskMenuTitle">任务操作</h2>
-  <p id="taskMenuText"></p>
-  <div class="actions">
-    <button id="moveUp">上移</button>
-    <button id="moveDown">下移</button>
-  </div>
-  <button id="deleteTask" class="wide danger">删除这条待办</button>
-  <button id="closeMenu" class="wide">取消</button>
+<h2 id="taskMenuTitle">任务操作</h2>
+<p id="taskMenuText"></p>
+<div class="actions"><button id="moveUp">上移</button><button id="moveDown">下移</button></div>
+<button id="deleteTask" class="wide danger">删除这条待办</button>
+<button id="closeMenu" class="wide">取消</button>
 </dialog>
 
 <script>
 'use strict';
-
 const $ = id => document.getElementById(id);
 const DATA = 'voice-data-v2';
-const NOTES = 'voice-notes-v1';
-const CONFIG = 'voice-config-v1';
-const PREFS = 'voice-preferences-v1';
+const NOTES = 'voice-notes-v1', CONFIG = 'voice-config-v1', PREFS = 'voice-preferences-v1';
 const Speech = window.SpeechRecognition || window.webkitSpeechRecognition;
-
 const SYSTEM = [
   '输入是用户碎片化口述记录。精简原文，去掉废话，不要编造信息，只从原文提取内容。',
   '先校正明显的语音转写错别字、同音字和口音误识别，返回 corrected_raw。',
@@ -233,1848 +156,766 @@ const SYSTEM = [
   '{"corrected_raw":"纠错后的完整原文","summary":"简短摘要","todos":[{"id":"已有任务id或空字符串","action":"动作","object":"对象或空字符串","targetDate":null,"originalText":"对应的原文片段"}]}。',
   '无待办时 todos 为 []。'
 ].join('\n');
-
-let notes = [];
-let speechRecords = [];
-let todoById = Object.create(null);
-let selectedRecordId = null;
-let current;
-let request = null;
-let speechSession = null;
-let storageBlocked = false;
-let dirty = false;
-let drag = null;
-let menuTaskId = null;
-
-const uid = () =>
-  window.crypto?.randomUUID?.() ||
-  Date.now() + '-' + Math.random().toString(36).slice(2);
-
-const say = text => {
-  $('status').textContent = text;
-};
-
-const taskText = t =>
-  [t.action, t.object, t.targetDate].filter(Boolean).join(' · ');
-
+let notes = [], speechRecords = [], todoById = Object.create(null);
+let selectedRecordId = null, current, request = null, speechSession = null;
+let storageBlocked = false, dirty = false, drag = null, menuTaskId = null;
+const uid = () => window.crypto?.randomUUID?.() || Date.now() + '-' + Math.random().toString(36).slice(2);
+const say = text => { $('status').textContent = text; };
+const taskText = t => [t.action, t.object, t.targetDate].filter(Boolean).join(' · ');
 const activeTasks = n => n.todos.filter(t => !t.isUserDeleted);
 const busy = () => !!request || !!speechSession;
-
-const fresh = () => ({
-  id: uid(),
-  created: new Date().toISOString(),
-  updated: new Date().toISOString(),
-  raw: '',
-  rawText: '',
-  summary: '',
-  todos: [],
-  organized: false,
-  referenceDate: localDate(),
-  needsReparse: false
-});
-
-// 日期只存 YYYY-MM-DD，标签和色块每次根据设备本地日期计算。
+const fresh = () => ({id:uid(),created:new Date().toISOString(),updated:new Date().toISOString(),raw:'',rawText:'',summary:'',todos:[],organized:false,referenceDate:localDate(),needsReparse:false});
+// 日期只存 YYYY-MM-DD；相对标签和色块每次用设备本地“今天”计算。
 function localDate(date = new Date()) {
   if (!Number.isFinite(date.getTime())) return null;
-  return [
-    date.getFullYear(),
-    String(date.getMonth() + 1).padStart(2, '0'),
-    String(date.getDate()).padStart(2, '0')
-  ].join('-');
+  return [date.getFullYear(),String(date.getMonth()+1).padStart(2,'0'),String(date.getDate()).padStart(2,'0')].join('-');
 }
-
 function standardDate(value) {
-  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) {
-    return null;
-  }
-  const [y, m, d] = value.split('-').map(Number);
-  const date = new Date(0);
-  date.setFullYear(y, m - 1, d);
-  date.setHours(12, 0, 0, 0);
+  if(typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
+  const [y,m,d] = value.split('-').map(Number);
+  const date = new Date(0); date.setFullYear(y,m-1,d); date.setHours(12,0,0,0);
   return localDate(date) === value ? value : null;
 }
-
 function dayNumber(value) {
-  if (!standardDate(value)) return NaN;
-  const [y, m, d] = value.split('-').map(Number);
-  const date = new Date(0);
-  date.setUTCFullYear(y, m - 1, d);
-  date.setUTCHours(0, 0, 0, 0);
-  return date.getTime() / 86400000;
+  if(!standardDate(value)) return NaN;
+  const [y,m,d] = value.split('-').map(Number);
+  const date = new Date(0); date.setUTCFullYear(y,m-1,d); date.setUTCHours(0,0,0,0);
+  return date.getTime()/86400000;
 }
-
-function addDays(value, days) {
-  const [y, m, d] = value.split('-').map(Number);
-  const date = new Date(0);
-  date.setFullYear(y, m - 1, d + days);
-  date.setHours(12, 0, 0, 0);
+function addDays(value,days) {
+  const [y,m,d] = value.split('-').map(Number);
+  const date = new Date(0); date.setFullYear(y,m-1,d+days); date.setHours(12,0,0,0);
   return localDate(date);
 }
-
-function dateInfo(t, today = localDate()) {
-  const diff = dayNumber(t.targetDate) - dayNumber(today);
-  if (!Number.isFinite(diff)) return {label: '', color: ''};
-
-  const label = diff === 0
-    ? '今天'
-    : diff === 1
-      ? '明天'
-      : diff > 1
-        ? diff + '天后'
-        : '逾期' + (-diff) + '天';
-
-  const color = t.isCompleted
-    ? ''
-    : diff <= 0
-      ? 'due-red'
-      : diff <= 3
-        ? 'due-yellow'
-        : diff <= 7
-          ? 'due-blue'
-          : diff <= 30
-            ? 'due-green'
-            : '';
-
-  return {label: label + ' · ' + t.targetDate, color};
+function dateInfo(t,today = localDate()) {
+  const diff = dayNumber(t.targetDate)-dayNumber(today);
+  if(!Number.isFinite(diff)) return {label:'',color:''};
+  const label = diff === 0 ? '今天' : diff === 1 ? '明天' : diff > 1 ? diff+'天后' : '逾期'+(-diff)+'天';
+  const color = t.isCompleted ? '' : diff<=0 ? 'due-red' : diff<=3 ? 'due-yellow' : diff<=7 ? 'due-blue' : diff<=30 ? 'due-green' : '';
+  return {label:label+' · '+t.targetDate,color};
 }
-
-// 相对日期基准固定为对应口述记录创建日期。
-function resolveDate(text, reference) {
-  if (!standardDate(reference) || !text) return null;
+// 旧版本 time 字段一次性迁移；基准是记录日期，绝不按打开日期重新解释“明天”。
+function resolveDate(text,reference) {
+  if(!standardDate(reference) || !text) return null;
   let m;
-
-  const make = (y, mo, d) => standardDate(
-    String(y).padStart(4, '0') + '-' +
-    String(mo).padStart(2, '0') + '-' +
-    String(d).padStart(2, '0')
-  );
-
-  if (m = text.match(/(\d{4})[年\/.-](\d{1,2})[月\/.-](\d{1,2})/)) {
-    return make(+m[1], +m[2], +m[3]);
+  const make = (y,mo,d) => standardDate(String(y).padStart(4,'0')+'-'+String(mo).padStart(2,'0')+'-'+String(d).padStart(2,'0'));
+  if(m=text.match(/(\d{4})[年\/.-](\d{1,2})[月\/.-](\d{1,2})/)) return make(+m[1],+m[2],+m[3]);
+  if(m=text.match(/(\d{1,2})月(\d{1,2})[日号]?/)) return make(+reference.slice(0,4),+m[1],+m[2]);
+  if(m=text.match(/(\d+)天[后内]/)) return addDays(reference,+m[1]);
+  for(const [word,offset] of [['大后天',3],['后天',2],['明天',1],['明早',1],['明晚',1],['今天',0],['今晚',0]]) {
+    if(text.includes(word)) return addDays(reference,offset);
   }
-
-  if (m = text.match(/(\d{1,2})月(\d{1,2})[日号]?/)) {
-    return make(+reference.slice(0, 4), +m[1], +m[2]);
+  if(m=text.match(/(下下|下|本|这)?(?:周|星期)([一二三四五六日天])/)) {
+    const weekday = {'一':0,'二':1,'三':2,'四':3,'五':4,'六':5,'日':6,'天':6}[m[2]];
+    const currentWeekday = ((dayNumber(reference)+3)%7+7)%7;
+    const week = m[1]==='下下'?14:m[1]==='下'?7:0;
+    let offset = week+weekday-currentWeekday;
+    if(!m[1] && offset<0) offset+=7;
+    return addDays(reference,offset);
   }
-
-  if (m = text.match(/(\d+)天[后内]/)) {
-    return addDays(reference, +m[1]);
-  }
-
-  for (const [word, offset] of [
-    ['大后天', 3], ['后天', 2], ['明天', 1],
-    ['明早', 1], ['明晚', 1], ['今天', 0], ['今晚', 0]
-  ]) {
-    if (text.includes(word)) return addDays(reference, offset);
-  }
-
-  if (m = text.match(/(下下|下|本|这)?(?:周|星期)([一二三四五六日天])/)) {
-    const weekday = {
-      '一': 0, '二': 1, '三': 2, '四': 3,
-      '五': 4, '六': 5, '日': 6, '天': 6
-    }[m[2]];
-
-    const currentWeekday = ((dayNumber(reference) + 3) % 7 + 7) % 7;
-    const week = m[1] === '下下' ? 14 : m[1] === '下' ? 7 : 0;
-    let offset = week + weekday - currentWeekday;
-
-    if (!m[1] && offset < 0) offset += 7;
-    return addDays(reference, offset);
-  }
-
-  return null;
+  return null; // “下周”“月底前后”等模糊范围不猜测某一天。
 }
-
 function identity(t) {
-  return (t.action + '|' + t.object)
-    .normalize('NFKC')
-    .toLowerCase()
-    .replace(/[\s，。！？、；：,.!?;:·]/g, '');
+  return (t.action+'|'+t.object).normalize('NFKC').toLowerCase().replace(/[\s，。！？、；：,.!?;:·]/g,'');
 }
-
 function sourceKey(text) {
-  return String(text || '')
-    .normalize('NFKC')
-    .toLowerCase()
-    .replace(/[\s，。！？、；：,.!?;:·]/g, '');
+  return String(text || '').normalize('NFKC').toLowerCase().replace(/[\s，。！？、；：,.!?;:·]/g,'');
 }
-
 function validNote(n) {
-  return n &&
-    typeof n.id === 'string' &&
-    typeof n.raw === 'string' &&
-    typeof n.summary === 'string' &&
-    typeof n.created === 'string' &&
-    typeof n.updated === 'string' &&
-    Array.isArray(n.todos) &&
-    n.todos.every(t =>
-      t &&
-      typeof t.action === 'string' &&
-      typeof t.object === 'string'
-    );
+  return n && typeof n.id==='string' && typeof n.raw==='string' &&
+    typeof n.summary==='string' && typeof n.created==='string' &&
+    typeof n.updated==='string' && Array.isArray(n.todos) &&
+    n.todos.every(t=>t && typeof t.action==='string' && typeof t.object==='string');
 }
-
 function normalizeNote(n) {
-  n.rawText = typeof n.rawText === 'string'
-    ? n.rawText
-    : (n.beforeCorrection || n.raw);
-
-  n.referenceDate =
-    standardDate(n.referenceDate) || localDate(new Date(n.created));
-
-  n.todos.forEach(t => {
+  n.rawText = typeof n.rawText==='string' ? n.rawText : (n.beforeCorrection || n.raw);
+  n.referenceDate = standardDate(n.referenceDate) || localDate(new Date(n.created));
+  n.todos.forEach(t=>{
     t.id ||= uid();
-    t.isCompleted = typeof t.isCompleted === 'boolean'
-      ? t.isCompleted
-      : !!t.done;
+    t.isCompleted = typeof t.isCompleted==='boolean' ? t.isCompleted : !!t.done;
     t.isUserDeleted = t.isUserDeleted === true;
     t.source = 'ai';
-
-    t.originalText = typeof t.originalText === 'string'
-      ? t.originalText
-      : [t.action, t.object, t.time].filter(Boolean).join(' ');
-
-    if (!Object.prototype.hasOwnProperty.call(t, 'targetDate')) {
-      t.targetDate = resolveDate(t.time, n.referenceDate);
-    }
-
+    t.originalText = typeof t.originalText==='string' ? t.originalText : [t.action,t.object,t.time].filter(Boolean).join(' ');
+    if(!Object.prototype.hasOwnProperty.call(t,'targetDate')) t.targetDate = resolveDate(t.time,n.referenceDate);
     t.targetDate = standardDate(t.targetDate);
-    t.aliases = Array.isArray(t.aliases)
-      ? t.aliases.filter(x => typeof x === 'string')
-      : [];
-
-    if (!t.aliases.includes(identity(t))) t.aliases.push(identity(t));
-
-    delete t.done;
-    delete t.time;
+    t.aliases = Array.isArray(t.aliases) ? t.aliases.filter(x=>typeof x==='string') : [];
+    if(!t.aliases.includes(identity(t))) t.aliases.push(identity(t));
+    delete t.done; delete t.time; // 不保存相对 UI 标签。
   });
-
   n.organized ??= !!n.summary || !!n.todos.length;
   return n;
 }
-
-// speechRecords 保存文本及任务 ID；todoById 保存完整待办。
-// 两者通过同一个 localStorage 快照同步写入。
-// notes 只是适配既有 UI、拖动和编辑逻辑的视图。
+// speechRecords 保存文本及任务 ID，todoById 保存完整待办；同一个快照原子写入。
+// notes 仅是适配原有渲染/拖动逻辑的视图，不是另一份持久化数据源。
 function makeSnapshot() {
-  const tasks = Object.create(null);
-
-  const records = notes.map(n => ({
-    id: n.id,
-    rawText: n.rawText,
-    editedText: n.raw,
-    createTime: new Date(n.created).getTime(),
-    updateTime: new Date(n.updated).getTime(),
-    todos: n.todos.map(t => {
-      tasks[t.id] = {...t, recordId: n.id};
+  const tasks=Object.create(null);
+  const records=notes.map(n=>({
+    id:n.id,
+    rawText:n.rawText,
+    editedText:n.raw,
+    createTime:new Date(n.created).getTime(),
+    updateTime:new Date(n.updated).getTime(),
+    todos:n.todos.map(t=>{
+      tasks[t.id]={...t,recordId:n.id};
       return t.id;
     }),
-    summary: n.summary,
-    beforeCorrection: n.beforeCorrection || '',
-    referenceDate: n.referenceDate,
-    organized: !!n.organized,
-    needsReparse: !!n.needsReparse
+    summary:n.summary,
+    beforeCorrection:n.beforeCorrection || '',
+    referenceDate:n.referenceDate,
+    organized:!!n.organized,
+    needsReparse:!!n.needsReparse
   }));
-
-  return {
-    version: 2,
-    selectedRecordId: current?.id || selectedRecordId,
-    speechRecords: records,
-    todoById: tasks
-  };
+  return {version:2,selectedRecordId:current?.id || selectedRecordId,speechRecords:records,todoById:tasks};
 }
-
 function adoptSnapshot(snapshot) {
-  if (
-    snapshot?.version !== 2 ||
-    !Array.isArray(snapshot.speechRecords) ||
-    !snapshot.todoById ||
-    typeof snapshot.todoById !== 'object'
-  ) {
-    throw Error('本地数据格式异常');
-  }
-
-  const seenRecords = new Set();
-  const seenTasks = new Set();
-
-  const views = snapshot.speechRecords.map(r => {
-    if (
-      !r ||
-      typeof r.id !== 'string' ||
-      seenRecords.has(r.id) ||
-      typeof r.rawText !== 'string' ||
-      typeof r.editedText !== 'string' ||
-      !Number.isFinite(r.createTime) ||
-      !Array.isArray(r.todos)
-    ) {
-      throw Error('口述记录格式异常');
-    }
-
+  if(snapshot?.version!==2 || !Array.isArray(snapshot.speechRecords) ||
+    !snapshot.todoById || typeof snapshot.todoById!=='object') throw Error('本地数据格式异常');
+  const seenRecords=new Set(),seenTasks=new Set();
+  const views=snapshot.speechRecords.map(r=>{
+    if(!r || typeof r.id!=='string' || seenRecords.has(r.id) ||
+      typeof r.rawText!=='string' || typeof r.editedText!=='string' ||
+      !Number.isFinite(r.createTime) || !Array.isArray(r.todos)) throw Error('口述记录格式异常');
     seenRecords.add(r.id);
-
-    const tasks = r.todos.map(id => {
-      const task = snapshot.todoById[id];
-
-      if (
-        typeof id !== 'string' ||
-        seenTasks.has(id) ||
-        !task ||
-        task.id !== id ||
-        task.recordId !== r.id
-      ) {
-        throw Error('待办关联异常');
-      }
-
+    const tasks=r.todos.map(id=>{
+      const task=snapshot.todoById[id];
+      if(typeof id!=='string' || seenTasks.has(id) || !task ||
+        task.id!==id || task.recordId!==r.id) throw Error('待办关联异常');
       seenTasks.add(id);
       return {...task};
     });
-
-    const n = {
-      id: r.id,
-      rawText: r.rawText,
-      raw: r.editedText,
-      created: new Date(r.createTime).toISOString(),
-      updated: new Date(r.updateTime || r.createTime).toISOString(),
-      todos: tasks,
-      summary: r.summary || '',
-      beforeCorrection: r.beforeCorrection || '',
-      referenceDate: r.referenceDate,
-      organized: r.organized,
-      needsReparse: r.needsReparse
+    const n={
+      id:r.id,rawText:r.rawText,raw:r.editedText,
+      created:new Date(r.createTime).toISOString(),
+      updated:new Date(r.updateTime || r.createTime).toISOString(),
+      todos:tasks,summary:r.summary || '',beforeCorrection:r.beforeCorrection || '',
+      referenceDate:r.referenceDate,organized:r.organized,needsReparse:r.needsReparse
     };
-
-    if (!validNote(n)) throw Error('待办内容异常');
+    if(!validNote(n)) throw Error('待办内容异常');
     return normalizeNote(n);
   });
-
-  speechRecords = snapshot.speechRecords;
-  todoById = snapshot.todoById;
-  selectedRecordId = snapshot.selectedRecordId || null;
-
+  speechRecords=snapshot.speechRecords;
+  todoById=snapshot.todoById;
+  selectedRecordId=snapshot.selectedRecordId || null;
   return views;
 }
-
 function readNotes() {
-  const saved = localStorage.getItem(DATA);
-  if (saved !== null) return adoptSnapshot(JSON.parse(saved));
-
-  const legacy = JSON.parse(localStorage.getItem(NOTES) || '[]');
-
-  if (!Array.isArray(legacy) || !legacy.every(validNote)) {
-    throw Error('旧记录格式异常');
-  }
-
+  const saved=localStorage.getItem(DATA);
+  if(saved!==null) return adoptSnapshot(JSON.parse(saved));
+  const legacy=JSON.parse(localStorage.getItem(NOTES) || '[]');
+  if(!Array.isArray(legacy) || !legacy.every(validNote)) throw Error('旧记录格式异常');
   return legacy.map(normalizeNote);
 }
-
 try {
-  notes = readNotes();
-
-  if (localStorage.getItem(DATA) === null) {
-    // 首次迁移：不重解析历史，保留旧存储原样。
-    const snapshot = makeSnapshot();
-    localStorage.setItem(DATA, JSON.stringify(snapshot));
-    speechRecords = snapshot.speechRecords;
-    todoById = snapshot.todoById;
+  notes=readNotes();
+  if(localStorage.getItem(DATA)===null) {
+    // 首次迁移保留旧存储原样，不重解析历史，不丢弃完成状态和删除墓碑。
+    const snapshot=makeSnapshot();
+    localStorage.setItem(DATA,JSON.stringify(snapshot));
+    speechRecords=snapshot.speechRecords; todoById=snapshot.todoById;
   }
 } catch {
-  storageBlocked = true;
+  storageBlocked=true;
   say('本地数据读取或迁移失败，已停止覆盖保存，请先备份。');
 }
-
 let profiles = {
-  deepseek: {
-    base: 'https://api.deepseek.com/v1',
-    model: 'deepseek-v4-flash',
-    key: ''
-  },
-  ollama: {
-    base: 'http://localhost:11434/v1',
-    model: 'qwen3:8b',
-    key: ''
-  }
+  deepseek:{base:'https://api.deepseek.com/v1',model:'deepseek-v4-flash',key:''},
+  ollama:{base:'http://localhost:11434/v1',model:'qwen3:8b',key:''}
 };
-
 let selectedProvider = 'deepseek';
-
 try {
   const c = JSON.parse(localStorage.getItem(CONFIG) || '{}');
-
   if (c.profiles) {
-    for (const p of ['deepseek', 'ollama']) {
-      for (const k of ['base', 'model', 'key']) {
-        if (typeof c.profiles[p]?.[k] === 'string') {
-          profiles[p][k] = c.profiles[p][k];
-        }
+    for (const p of ['deepseek','ollama']) {
+      for (const k of ['base','model','key']) {
+        if (typeof c.profiles[p]?.[k] === 'string') profiles[p][k] = c.profiles[p][k];
       }
     }
   } else {
-    const p = c.provider === 'ollama' || /:11434\b/.test(c.base || '')
-      ? 'ollama'
-      : 'deepseek';
-
-    for (const k of ['base', 'model', 'key']) {
-      if (typeof c[k] === 'string') profiles[p][k] = c[k];
-    }
-
+    const p = c.provider === 'ollama' || /:11434\b/.test(c.base || '') ? 'ollama' : 'deepseek';
+    for (const k of ['base','model','key']) if (typeof c[k] === 'string') profiles[p][k] = c[k];
     selectedProvider = p;
   }
-
-  if (['deepseek', 'ollama'].includes(c.provider)) {
-    selectedProvider = c.provider;
-  }
-} catch {
-  say('本地配置无法读取，请重新填写。');
-}
-
-try {
-  $('hideDone').checked =
-    !!JSON.parse(localStorage.getItem(PREFS) || '{}').hideDone;
-} catch {
-  say('显示偏好读取失败。');
-}
-
+  if (['deepseek','ollama'].includes(c.provider)) selectedProvider = c.provider;
+  $('hideDone').checked = !!JSON.parse(localStorage.getItem(PREFS) || '{}').hideDone;
+} catch { say('本地配置无法读取，请重新填写。'); }
+// 显示偏好独立读取，API 配置损坏不能影响“隐藏已完成”。
+try { $('hideDone').checked=!!JSON.parse(localStorage.getItem(PREFS)||'{}').hideDone; }
+catch { say('显示偏好读取失败。'); }
 function persist() {
   dirty = true;
-
-  if (storageBlocked) {
-    $('saved').textContent = '未保存';
-    return false;
-  }
-
+  if (storageBlocked) { $('saved').textContent = '未保存'; return false; }
   try {
-    const snapshot = makeSnapshot();
+    const snapshot=makeSnapshot();
     localStorage.setItem(DATA, JSON.stringify(snapshot));
-
-    speechRecords = snapshot.speechRecords;
-    todoById = snapshot.todoById;
-    selectedRecordId = snapshot.selectedRecordId;
-
-    dirty = false;
-    $('saved').textContent = '已保存到本机';
-    return true;
+    speechRecords=snapshot.speechRecords; todoById=snapshot.todoById; selectedRecordId=snapshot.selectedRecordId;
+    dirty = false; $('saved').textContent = '已保存到本机'; return true;
   } catch {
     $('saved').textContent = '保存失败';
     say('本机保存失败，请立即导出 TXT，避免丢失当前内容。');
     return false;
   }
 }
-
 function commit() {
   current.updated = new Date().toISOString();
-
   const i = notes.findIndex(n => n.id === current.id);
-
-  if (i < 0) notes.unshift(current);
-  else notes[i] = current;
-
-  const ok = persist();
-  renderHistory();
-  return ok;
+  if (i < 0) notes.unshift(current); else notes[i] = current;
+  const ok = persist(); renderHistory(); return ok;
 }
-
 function highlight(node, text, whole = false) {
-  if (whole) {
-    const m = document.createElement('mark');
-    m.textContent = text;
-    node.append(m);
-    return;
-  }
-
+  if (whole) { const m = document.createElement('mark'); m.textContent = text; node.append(m); return; }
   const pattern = /(?:\d{4}[年\/.-]\d{1,2}[月\/.-]\d{1,2}日?|\d{1,2}月\d{1,2}[日号]?|(?:今天|明天|后天|大后天|今晚|明早|明晚|本周|这周|下周|下下周|周末|下个月|本月|月底|下月)(?:[一二三四五六日天])?|(?:星期|周)[一二三四五六日天]|(?:上午|下午|晚上|中午|凌晨|早上)|\d{1,2}[:：]\d{2}|\d{1,2}点(?:半|\d{1,2}分)?)/g;
-
   let last = 0;
-
   for (const match of text.matchAll(pattern)) {
     node.append(document.createTextNode(text.slice(last, match.index)));
-
-    const m = document.createElement('mark');
-    m.textContent = match[0];
-    node.append(m);
-
+    const m = document.createElement('mark'); m.textContent = match[0]; node.append(m);
     last = match.index + match[0].length;
   }
-
   node.append(document.createTextNode(text.slice(last)));
 }
-
 function renderResult() {
   $('summaryText').replaceChildren();
-
-  highlight(
-    $('summaryText'),
-    current.summary || '按住下方按钮，新建一条口述记录。'
-  );
-
-  $('recordTime').textContent =
-    '本条创建于 ' + new Date(current.created).toLocaleString('zh-CN');
-
-  $('originalPanel').hidden = !current.rawText;
-  $('originalSpeech').textContent = current.rawText || '';
-
+  highlight($('summaryText'), current.summary || '按住下方按钮，新建一条口述记录。');
+  $('recordTime').textContent='本条创建于 '+new Date(current.created).toLocaleString('zh-CN');
+  $('originalPanel').hidden=!current.rawText;
+  $('originalSpeech').textContent=current.rawText || '';
   $('summaryText').classList.toggle('empty', !current.summary);
-
-  $('count').textContent = activeTasks(current).length
-    ? activeTasks(current).filter(t => !t.isCompleted).length + ' 项未完成'
-    : '';
-
+  $('count').textContent = activeTasks(current).length ? activeTasks(current).filter(t => !t.isCompleted).length + ' 项未完成' : '';
   $('todos').replaceChildren();
-
   const today = localDate();
-  const shown = activeTasks(current).filter(t =>
-    !$('hideDone').checked || !t.isCompleted
-  );
-
+  const shown = activeTasks(current).filter(t => !$('hideDone').checked || !t.isCompleted);
   if (!shown.length) {
-    const p = document.createElement('p');
-    p.className = 'hint';
-    p.textContent = activeTasks(current).length
-      ? '已完成任务已隐藏。'
-      : current.organized
-        ? '没有提取到待办事项。'
-        : '整理后，行动事项会显示在这里。';
-
+    const p = document.createElement('p'); p.className = 'hint';
+    p.textContent = activeTasks(current).length ? '已完成任务已隐藏。' : current.organized ? '没有提取到待办事项。' : '整理后，行动事项会显示在这里。';
     $('todos').append(p);
   }
-
   shown.forEach(t => {
-    const row = document.createElement('div');
-    row.className =
-      'task ' + dateInfo(t, today).color +
-      (t.isCompleted ? ' done' : '');
-    row.dataset.id = t.id;
-
-    const label = document.createElement('label');
-    label.className = 'task-check';
-
-    const check = document.createElement('input');
-    check.type = 'checkbox';
-    check.checked = t.isCompleted;
-    check.disabled = busy();
+    const row = document.createElement('div'); row.className = 'task ' + dateInfo(t,today).color + (t.isCompleted ? ' done' : ''); row.dataset.id = t.id;
+    const label = document.createElement('label'); label.className = 'task-check';
+    const check = document.createElement('input'); check.type = 'checkbox'; check.checked = t.isCompleted; check.disabled = busy();
     check.setAttribute('aria-label', '完成：' + taskText(t));
-
-    check.onchange = () => {
-      t.isCompleted = check.checked;
-      commit();
-      renderResult();
-    };
-
+    check.onchange = () => { t.isCompleted = check.checked; commit(); renderResult(); };
     label.append(check);
-
-    const text = document.createElement('div');
-    text.className = 'task-text';
-
-    highlight(
-      text,
-      [t.action, t.object].filter(Boolean).join(' · ')
-    );
-
-    if (t.targetDate) {
-      const deadline = document.createElement('span');
-      deadline.className = 'deadline';
-      deadline.textContent = dateInfo(t, today).label;
-      text.append(document.createElement('br'), deadline);
-    }
-
-    bindTaskLongPress(text, t);
-
-    const handle = document.createElement('button');
-    handle.className = 'drag-handle';
-    handle.textContent = '⠿';
-    handle.disabled = busy();
-    handle.setAttribute(
-      'aria-label',
-      '长按拖动排序，点击打开任务操作：' + taskText(t)
-    );
-
-    bindDrag(handle, row, t);
-
-    row.append(label, text, handle);
-    $('todos').append(row);
+    const text = document.createElement('div'); text.className = 'task-text';
+    highlight(text, [t.action,t.object].filter(Boolean).join(' · '));
+    if(t.targetDate) { const deadline = document.createElement('span'); deadline.className='deadline'; deadline.textContent=dateInfo(t,today).label; text.append(document.createElement('br'),deadline); }
+    bindTaskLongPress(text,t);
+    const handle = document.createElement('button'); handle.className = 'drag-handle'; handle.textContent = '⠿';
+    handle.disabled = busy(); handle.setAttribute('aria-label','长按拖动排序，点击打开任务操作：' + taskText(t));
+    bindDrag(handle,row,t);
+    row.append(label,text,handle); $('todos').append(row);
   });
-
   $('correctionPanel').hidden = !current.beforeCorrection;
   $('beforeCorrection').textContent = current.beforeCorrection || '';
 }
-
 function renderHistory() {
   const keyword = $('search').value.trim().toLocaleLowerCase();
-
-  const found = [...notes]
-    .sort((a, b) => b.updated.localeCompare(a.updated))
-    .filter(n =>
-      [
-        n.raw,
-        n.rawText,
-        n.beforeCorrection || '',
-        n.summary,
-        ...activeTasks(n).map(taskText)
-      ].join('\n').toLocaleLowerCase().includes(keyword)
-    );
-
+  const found = [...notes].sort((a,b) => b.updated.localeCompare(a.updated)).filter(n =>
+    [n.raw,n.rawText,n.beforeCorrection || '',n.summary,...activeTasks(n).map(taskText)].join('\n').toLocaleLowerCase().includes(keyword));
   $('history').replaceChildren();
-
   if (!found.length) {
-    const p = document.createElement('p');
-    p.className = 'hint';
-    p.textContent = keyword
-      ? '没有匹配的备忘录。'
-      : '还没有历史记录。';
-    $('history').append(p);
+    const p = document.createElement('p'); p.className = 'hint';
+    p.textContent = keyword ? '没有匹配的备忘录。' : '还没有历史记录。'; $('history').append(p);
   }
-
   found.forEach(n => {
-    const row = document.createElement('div');
-    row.className =
-      'history-item' + (n.id === current.id ? ' active' : '');
-
-    const open = document.createElement('button');
-    open.className = 'open';
-    open.disabled = busy();
-
-    const title = document.createElement('strong');
-    title.textContent =
-      (n.summary || n.raw || '空白记录').slice(0, 60);
-
-    const date = document.createElement('small');
-    date.textContent =
-      '创建于 ' + new Date(n.created).toLocaleString('zh-CN');
-
-    open.append(title, date);
-
-    open.onclick = () => {
-      if (busy()) return;
-      current = n;
-      persist();
-      renderEditor();
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    };
-
-    const del = document.createElement('button');
-    del.className = 'danger';
-    del.textContent = '删除';
-    del.disabled = busy();
-    del.setAttribute('aria-label', '删除备忘录：' + title.textContent);
-
+    const row = document.createElement('div'); row.className = 'history-item' + (n.id === current.id ? ' active' : '');
+    const open = document.createElement('button'); open.className = 'open'; open.disabled = busy();
+    const title = document.createElement('strong'); title.textContent = (n.summary || n.raw || '空白记录').slice(0,60);
+    const date = document.createElement('small'); date.textContent = '创建于 '+new Date(n.created).toLocaleString('zh-CN');
+    open.append(title,date);
+    open.onclick = () => { if(busy()) return; current = n; persist(); renderEditor(); window.scrollTo({top:0,behavior:'smooth'}); };
+    const del = document.createElement('button'); del.className = 'danger'; del.textContent = '删除'; del.disabled = busy();
+    del.setAttribute('aria-label','删除备忘录：' + title.textContent);
     del.onclick = () => {
-      if (
-        busy() ||
-        !confirm('删除这条口述记录及其全部待办？此操作无法撤销。')
-      ) {
-        return;
-      }
-
+      if(busy() || !confirm('删除这条口述记录及其全部待办？此操作无法撤销。')) return;
       notes = notes.filter(x => x.id !== n.id);
-
-      if (current.id === n.id) {
-        current = notes[0] || fresh();
-      }
-
-      // 快照只包含剩余记录，关联待办随之移除。
-      persist();
-      renderEditor();
+      if (current.id === n.id) current = fresh();
+      persist(); renderEditor();
     };
-
-    row.append(open, del);
-    $('history').append(row);
+    row.append(open,del); $('history').append(row);
   });
 }
-
 function renderEditor() {
   $('raw').value = current.raw;
-
-  $('saved').textContent = dirty
-    ? '有未保存内容'
-    : notes.some(n => n.id === current.id)
-      ? '本机记录'
-      : '尚未保存';
-
-  $('rawPanel').open = false;
-  renderResult();
-  renderHistory();
+  $('saved').textContent = dirty ? '有未保存内容' : notes.some(n => n.id === current.id) ? '本机记录' : '尚未保存';
+  $('rawPanel').open = false; renderResult(); renderHistory();
 }
-
 function lock() {
-  for (const id of [
-    'new', 'clearRaw', 'restoreRaw', 'generate',
-    'provider', 'key', 'base', 'model',
-    'saveConfig', 'clearKey', 'hideDone'
-  ]) {
-    $(id).disabled = busy();
-  }
-
-  $('raw').readOnly = busy();
-  $('record').disabled = !!request || !Speech;
-  $('cancel').hidden = !request;
-
-  renderResult();
-  renderHistory();
+  for (const id of ['new','newRecord','clearRaw','restoreRaw','generate','provider','key','base','model','saveConfig','clearKey','hideDone']) $(id).disabled = busy();
+  $('raw').readOnly = busy(); $('record').disabled = !!request || !Speech;
+  $('cancel').hidden = !request; renderResult(); renderHistory();
 }
-
 function editRaw(text) {
-  remapDeletedSources(current, current.raw, text);
-  current.raw = text;
-  current.needsReparse = true;
-
-  // 不清空任务、完成状态、删除墓碑，不自动调用 AI。
-  delete current.beforeCorrection;
-
-  commit();
-  renderResult();
+  remapDeletedSources(current,current.raw,text);
+  current.raw = text; current.needsReparse = true;
+  // 核对原文不清空任务、完成状态和删除墓碑，也不自动调用 AI。
+  delete current.beforeCorrection; commit(); renderResult();
 }
-
 $('raw').oninput = () => editRaw($('raw').value);
-
-$('new').onclick = () => {
-  if (busy()) return;
-  current = fresh();
-  persist();
-  renderEditor();
-  say('新记录已准备好，可输入文字或按住说话。');
-};
-
+function newRecord() {
+  if(busy()) return;
+  if(dirty && !persist()) return;
+  current = fresh(); persist(); renderEditor();
+  say('已开启新一组口述记录，之前内容可在历史记录中查看。');
+}
+$('new').onclick = newRecord;
+$('newRecord').onclick = newRecord;
 $('clearRaw').onclick = () => {
-  if (busy()) return;
-
-  remapDeletedSources(current, current.raw, '');
-  current.raw = '';
-  delete current.beforeCorrection;
-  $('raw').value = '';
-
-  commit();
-  renderResult();
-  say('原文已清空，摘要和待办已保留。再次按住说话将开始新记录。');
+  if(busy()) return;
+  remapDeletedSources(current,current.raw,'');
+  current.raw = ''; delete current.beforeCorrection; $('raw').value = '';
+  commit(); renderResult(); say('当前编辑文本已清空，摘要和待办已保留。录音仍追加到本组；新开一组请点“新建口述记录”。');
 };
-
 $('restoreRaw').onclick = () => {
-  if (busy() || !current.beforeCorrection) return;
-
-  const original = current.beforeCorrection;
-  editRaw(original);
-  $('raw').value = original;
-
+  if(busy() || !current.beforeCorrection) return;
+  const original = current.beforeCorrection; editRaw(original); $('raw').value = original;
   say('已恢复纠错前文本，请重新整理。');
 };
-
 $('search').oninput = renderHistory;
-
 $('hideDone').onchange = () => {
-  try {
-    localStorage.setItem(
-      PREFS,
-      JSON.stringify({hideDone: $('hideDone').checked})
-    );
-  } catch {
-    say('显示偏好保存失败。');
-  }
-
+  try { localStorage.setItem(PREFS,JSON.stringify({hideDone:$('hideDone').checked})); }
+  catch { say('显示偏好保存失败。'); }
   renderResult();
 };
 
 function showTaskMenu(t) {
-  if (busy() || drag) return;
-
-  menuTaskId = t.id;
-  $('taskMenuText').textContent = taskText(t);
-
-  const tasks = activeTasks(current);
-  const i = tasks.findIndex(x => x.id === t.id);
-
-  $('moveUp').disabled = i <= 0;
-  $('moveDown').disabled = i === tasks.length - 1;
-
+  if(busy() || drag) return;
+  menuTaskId = t.id; $('taskMenuText').textContent = taskText(t);
+  const tasks=activeTasks(current), i=tasks.findIndex(x=>x.id===t.id);
+  $('moveUp').disabled=i<=0; $('moveDown').disabled=i===tasks.length-1;
   if (!$('taskMenu').open) $('taskMenu').showModal();
 }
-
-function bindTaskLongPress(el, t) {
+function bindTaskLongPress(el,t) {
   let timer, pointer, x, y;
-
-  const clear = () => {
-    clearTimeout(timer);
-    pointer = null;
-  };
-
+  const clear = () => { clearTimeout(timer); pointer = null; };
   el.onpointerdown = e => {
-    if (busy() || !e.isPrimary || e.button !== 0) return;
-
-    pointer = e.pointerId;
-    x = e.clientX;
-    y = e.clientY;
-
-    timer = setTimeout(() => {
-      pointer = null;
-      showTaskMenu(t);
-    }, 550);
+    if(busy() || !e.isPrimary || e.button !== 0) return;
+    pointer = e.pointerId; x = e.clientX; y = e.clientY;
+    timer = setTimeout(() => { pointer = null; showTaskMenu(t); },550);
   };
-
-  el.onpointermove = e => {
-    if (
-      e.pointerId === pointer &&
-      Math.hypot(e.clientX - x, e.clientY - y) > 9
-    ) {
-      clear();
-    }
-  };
-
-  el.onpointerup = clear;
-  el.onpointercancel = clear;
-  el.onpointerleave = clear;
-
-  el.oncontextmenu = e => {
-    e.preventDefault();
-    clear();
-    showTaskMenu(t);
-  };
+  el.onpointermove = e => { if(e.pointerId === pointer && Math.hypot(e.clientX-x,e.clientY-y)>9) clear(); };
+  el.onpointerup = clear; el.onpointercancel = clear; el.onpointerleave = clear;
+  el.oncontextmenu = e => { e.preventDefault(); clear(); showTaskMenu(t); };
 }
-
-function reorder(id, beforeId) {
+function reorder(id,beforeId) {
   const from = current.todos.findIndex(t => t.id === id);
   const to = current.todos.findIndex(t => t.id === beforeId);
-
   if (from < 0 || to < 0 || from === to) return;
-
-  const [item] = current.todos.splice(from, 1);
-  current.todos.splice(to, 0, item);
+  const [item] = current.todos.splice(from,1); current.todos.splice(to,0,item);
 }
-
-function bindDrag(handle, row, t) {
-  let state = null;
-  let suppressClick = false;
-
-  handle.onclick = () => {
-    if (suppressClick) {
-      suppressClick = false;
-      return;
-    }
-    showTaskMenu(t);
-  };
-
+function bindDrag(handle,row,t) {
+  let state = null, suppressClick = false;
+  handle.onclick = () => { if(suppressClick){suppressClick=false;return;} showTaskMenu(t); };
   handle.oncontextmenu = e => e.preventDefault();
-
   function frame() {
-    if (!state?.active) return;
-
-    const y = state.y;
-    const edge = 76;
-    const delta = y < edge
-      ? -Math.min(14, (edge - y) / 4)
-      : y > innerHeight - edge
-        ? Math.min(14, (y - innerHeight + edge) / 4)
-        : 0;
-
-    if (delta) window.scrollBy(0, delta);
-
+    if(!state?.active) return;
+    const y = state.y, edge = 76;
+    const delta = y < edge ? -Math.min(14,(edge-y)/4) : y > innerHeight-edge ? Math.min(14,(y-innerHeight+edge)/4) : 0;
+    if(delta) window.scrollBy(0,delta);
     const other = [...$('todos').querySelectorAll('.task')].find(node => {
-      if (node === row) return false;
-      const r = node.getBoundingClientRect();
-      return y >= r.top && y <= r.bottom;
+      if(node === row) return false;
+      const r = node.getBoundingClientRect(); return y >= r.top && y <= r.bottom;
     });
-
-    if (other) {
-      const r = other.getBoundingClientRect();
-      const down =
-        current.todos.findIndex(x => x.id === t.id) <
-        current.todos.findIndex(x => x.id === other.dataset.id);
-
-      if (
-        (down && y > r.top + r.height / 2) ||
-        (!down && y < r.top + r.height / 2)
-      ) {
-        reorder(t.id, other.dataset.id);
-
-        if (down) other.after(row);
-        else other.before(row);
-
+    if(other) {
+      const r = other.getBoundingClientRect(), down = current.todos.findIndex(x=>x.id===t.id) < current.todos.findIndex(x=>x.id===other.dataset.id);
+      if ((down && y > r.top+r.height/2) || (!down && y < r.top+r.height/2)) {
+        reorder(t.id,other.dataset.id);
+        if(down) other.after(row); else other.before(row);
         commit();
       }
     }
-
     state.frame = requestAnimationFrame(frame);
   }
-
   handle.onpointerdown = e => {
-    if (busy() || drag || !e.isPrimary || e.button !== 0) return;
-
-    e.preventDefault();
-    suppressClick = false;
-
-    state = {
-      id: e.pointerId,
-      x: e.clientX,
-      startY: e.clientY,
-      y: e.clientY,
-      active: false
-    };
-
+    if(busy() || drag || !e.isPrimary || e.button !== 0) return;
+    e.preventDefault(); suppressClick = false;
+    state = {id:e.pointerId,x:e.clientX,startY:e.clientY,y:e.clientY,active:false};
     handle.setPointerCapture(e.pointerId);
-
     state.timer = setTimeout(() => {
-      if (!state) return;
-
-      state.active = true;
-      drag = state;
-      row.classList.add('dragging');
-      suppressClick = true;
-
-      say('上下拖动调整顺序，松手保存。');
-      frame();
-    }, 380);
+      if(!state) return;
+      state.active = true; drag = state; row.classList.add('dragging');
+      suppressClick = true; say('上下拖动调整顺序，松手保存。'); frame();
+    },380);
   };
-
   handle.onpointermove = e => {
-    if (!state || state.id !== e.pointerId) return;
-
+    if(!state || state.id !== e.pointerId) return;
     state.y = e.clientY;
-
-    if (
-      !state.active &&
-      Math.hypot(e.clientX - state.x, e.clientY - state.startY) > 12
-    ) {
-      clearTimeout(state.timer);
-      suppressClick = true;
+    if(!state.active && Math.hypot(e.clientX-state.x,e.clientY-state.startY)>12) {
+      clearTimeout(state.timer); suppressClick = true;
     }
-
-    if (state.active) e.preventDefault();
+    if(state.active) e.preventDefault();
   };
-
   function end(e) {
-    if (!state || state.id !== e.pointerId) return;
-
-    clearTimeout(state.timer);
-    cancelAnimationFrame(state.frame);
-
-    const active = state.active;
-    state = null;
-    drag = null;
-
+    if(!state || state.id !== e.pointerId) return;
+    clearTimeout(state.timer); cancelAnimationFrame(state.frame);
+    const active = state.active; state = null; drag = null;
     row.classList.remove('dragging');
-
-    if (active) {
-      commit();
-      renderResult();
-      say(dirty ? '排序已调整，但保存失败，请导出。' : '待办排序已保存。');
-    }
+    if(active){commit(); renderResult(); say(dirty?'排序已调整，但保存失败，请导出。':'待办排序已保存。');}
   }
-
-  handle.onpointerup = end;
-  handle.onpointercancel = end;
-  handle.onlostpointercapture = end;
+  handle.onpointerup = end; handle.onpointercancel = end; handle.onlostpointercapture = end;
 }
-
 $('closeMenu').onclick = () => $('taskMenu').close();
-
 $('deleteTask').onclick = () => {
-  if (busy()) return;
-
-  const task = current.todos.find(t => t.id === menuTaskId);
-
-  if (task) {
-    task.isUserDeleted = true;
-    task.deletedAt = new Date().toISOString();
-    task.deletedRanges = sourceRanges(current.raw, task.originalText);
-
-    if (!task.deletedRanges.length && current.beforeCorrection) {
-      task.deletedRanges = sourceRanges(
-        current.beforeCorrection,
-        task.originalText
-      );
-
-      remapDeletedSources(
-        {todos: [task]},
-        current.beforeCorrection,
-        current.raw
-      );
+  if(busy()) return;
+  const task=current.todos.find(t=>t.id===menuTaskId);
+  if(task) {
+    task.isUserDeleted=true; task.deletedAt=new Date().toISOString();
+    task.deletedRanges=sourceRanges(current.raw,task.originalText);
+    if(!task.deletedRanges.length && current.beforeCorrection) {
+      task.deletedRanges=sourceRanges(current.beforeCorrection,task.originalText);
+      remapDeletedSources({todos:[task]},current.beforeCorrection,current.raw);
     }
   }
-
-  commit();
-  renderResult();
-  $('taskMenu').close();
+  commit(); renderResult(); $('taskMenu').close();
 };
-
-for (const [id, step] of [['moveUp', -1], ['moveDown', 1]]) {
+for (const [id,step] of [['moveUp',-1],['moveDown',1]]) {
   $(id).onclick = () => {
-    const tasks = activeTasks(current);
-    const i = tasks.findIndex(t => t.id === menuTaskId);
-    const target = i + step;
-
-    if (
-      !busy() &&
-      i >= 0 &&
-      target >= 0 &&
-      target < tasks.length
-    ) {
-      reorder(menuTaskId, tasks[target].id);
-      commit();
-      renderResult();
+    const tasks=activeTasks(current), i=tasks.findIndex(t=>t.id===menuTaskId), target=i+step;
+    if(!busy() && i>=0 && target>=0 && target<tasks.length) {
+      reorder(menuTaskId,tasks[target].id); commit(); renderResult();
     }
-
     $('taskMenu').close();
   };
 }
 
-function readProfile() {
-  return {
-    base: $('base').value.trim(),
-    model: $('model').value.trim(),
-    key: $('key').value.trim()
-  };
-}
-
+function readProfile() { return {base:$('base').value.trim(),model:$('model').value.trim(),key:$('key').value.trim()}; }
 function showProfile() {
   $('provider').value = selectedProvider;
-
-  for (const k of ['base', 'model', 'key']) {
-    $(k).value = profiles[selectedProvider][k];
-  }
-
+  for(const k of ['base','model','key']) $(k).value = profiles[selectedProvider][k];
   $('ollamaHint').hidden = selectedProvider !== 'ollama';
 }
-
 $('provider').onchange = () => {
-  profiles[selectedProvider] = readProfile();
-  selectedProvider = $('provider').value;
-  showProfile();
+  profiles[selectedProvider] = readProfile(); selectedProvider = $('provider').value; showProfile();
 };
-
 function endpoint(profile) {
   const u = new URL(profile.base);
-
-  if (
-    !['https:', 'http:'].includes(u.protocol) ||
-    u.username || u.password || u.search || u.hash
-  ) {
-    throw Error('API Base 地址无效。');
-  }
-
-  if (u.protocol !== 'https:' && selectedProvider !== 'ollama') {
-    throw Error('DeepSeek API 必须使用 HTTPS。');
-  }
-
-  if (location.protocol === 'https:' && u.protocol === 'http:') {
-    throw Error('HTTPS 页面不能直连 HTTP Ollama，请配置可信的 HTTPS 代理。');
-  }
-
-  const base = u.href.replace(/\/+$/, '');
-
-  if (base.endsWith('/api') || base.endsWith('/api/chat')) {
-    throw Error(
-      '请使用 Ollama 的 OpenAI 兼容地址，例如 http://localhost:11434/v1。'
-    );
-  }
-
-  return base.endsWith('/chat/completions')
-    ? base
-    : base + '/chat/completions';
+  if(!['https:','http:'].includes(u.protocol) || u.username || u.password || u.search || u.hash) throw Error('API Base 地址无效。');
+  if(u.protocol !== 'https:' && selectedProvider !== 'ollama') throw Error('DeepSeek API 必须使用 HTTPS。');
+  if(location.protocol === 'https:' && u.protocol === 'http:') throw Error('HTTPS 页面不能直连 HTTP Ollama，请配置可信的 HTTPS 代理。');
+  const base = u.href.replace(/\/+$/,'');
+  if(base.endsWith('/api') || base.endsWith('/api/chat')) throw Error('请使用 Ollama 的 OpenAI 兼容地址，例如 http://localhost:11434/v1。');
+  return base.endsWith('/chat/completions') ? base : base + '/chat/completions';
 }
-
 function saveConfig() {
   profiles[selectedProvider] = readProfile();
-
-  localStorage.setItem(CONFIG, JSON.stringify({
-    provider: selectedProvider,
-    ...profiles[selectedProvider],
-    profiles
-  }));
+  localStorage.setItem(CONFIG,JSON.stringify({provider:selectedProvider,...profiles[selectedProvider],profiles}));
 }
-
 $('saveConfig').onclick = () => {
-  try {
-    endpoint(readProfile());
-    saveConfig();
-    $('settings').open = false;
-    say('API 配置已保存到本机。');
-  } catch (e) {
-    say('未保存：' + e.message);
-  }
+  try { endpoint(readProfile()); saveConfig(); $('settings').open=false; say('API 配置已保存到本机。'); }
+  catch(e) { say('未保存：'+e.message); }
 };
-
 $('clearKey').onclick = () => {
   try {
     const c = JSON.parse(localStorage.getItem(CONFIG) || '{}');
     delete c.key;
-
-    if (c.profiles) {
-      for (const p of Object.values(c.profiles)) {
-        if (p) delete p.key;
-      }
-    }
-
-    localStorage.setItem(CONFIG, JSON.stringify(c));
-
-    profiles.deepseek.key = '';
-    profiles.ollama.key = '';
-    $('key').value = '';
-
-    say('本地密钥已清除。');
-  } catch {
-    say('密钥清除失败，请检查浏览器存储。');
-  }
+    if(c.profiles) for(const p of Object.values(c.profiles)) if(p) delete p.key;
+    localStorage.setItem(CONFIG,JSON.stringify(c));
+    profiles.deepseek.key = ''; profiles.ollama.key = ''; $('key').value = ''; say('本地密钥已清除。');
+  } catch { say('密钥清除失败，请检查浏览器存储。'); }
 };
 
-function sourceRanges(text, quote) {
-  const ranges = [];
-  if (!quote) return ranges;
-
-  let i = text.indexOf(quote);
-
-  while (i >= 0) {
-    ranges.push([i, i + quote.length]);
-    i = text.indexOf(quote, i + quote.length);
-  }
-
+function sourceRanges(text,quote) {
+  const ranges=[];
+  if(!quote) return ranges;
+  let i=text.indexOf(quote);
+  while(i>=0) { ranges.push([i,i+quote.length]); i=text.indexOf(quote,i+quote.length); }
   return ranges;
 }
-
-// 跟踪删除任务对应的原文区间，防止编辑措辞后换 ID 重新出现。
-function remapDeletedSources(note, before, after) {
-  if (before === after) return;
-
-  let head = 0;
-  let tail = 0;
-
-  while (
-    head < before.length &&
-    head < after.length &&
-    before[head] === after[head]
-  ) {
-    head++;
-  }
-
-  while (
-    tail < before.length - head &&
-    tail < after.length - head &&
-    before[before.length - 1 - tail] === after[after.length - 1 - tail]
-  ) {
-    tail++;
-  }
-
-  const oldEnd = before.length - tail;
-  const newEnd = after.length - tail;
-  const shift = after.length - before.length;
-
-  note.todos.filter(t => t.isUserDeleted).forEach(t => {
-    t.deletedRanges = (
-      t.deletedRanges || sourceRanges(before, t.originalText)
-    ).map(([start, end]) => {
-      const quote = before.slice(start, end);
-      const exact = sourceRanges(after, quote);
-
-      if (exact.length === 1) return exact[0];
-
-      const left = before.slice(Math.max(0, start - 24), start);
-      const right = before.slice(end, end + 24);
-      const leftAt = left ? after.indexOf(left) : 0;
-      const mappedStart = leftAt < 0 ? -1 : leftAt + left.length;
-      const rightAt = right && mappedStart >= 0
-        ? after.indexOf(right, mappedStart)
-        : -1;
-
-      if (mappedStart >= 0 && rightAt >= mappedStart) {
-        return [mappedStart, rightAt];
-      }
-
-      if (end <= head) return [start, end];
-      if (start >= oldEnd) return [start + shift, end + shift];
-
-      return [
-        Math.min(start, head),
-        Math.max(newEnd, end > oldEnd ? end + shift : newEnd)
-      ];
-    }).filter(([start, end]) => start < end);
+// 编辑命中已删除任务的原句时，跟踪对应文本区间，避免改写措辞后换 ID 复活。
+function remapDeletedSources(note,before,after) {
+  if(before===after) return;
+  let head=0,tail=0;
+  while(head<before.length && head<after.length && before[head]===after[head])head++;
+  while(tail<before.length-head && tail<after.length-head && before[before.length-1-tail]===after[after.length-1-tail])tail++;
+  const oldEnd=before.length-tail,newEnd=after.length-tail,shift=after.length-before.length;
+  note.todos.filter(t=>t.isUserDeleted).forEach(t=>{
+    t.deletedRanges=(t.deletedRanges || sourceRanges(before,t.originalText)).map(([start,end])=>{
+      // 多处编辑时优先用该任务前后未改动的局部上下文定位，
+      // 避免把在原文末尾新增加的另一项待办也纳入删除区间。
+      const quote=before.slice(start,end), exact=sourceRanges(after,quote);
+      if(exact.length===1)return exact[0];
+      const left=before.slice(Math.max(0,start-24),start),right=before.slice(end,end+24);
+      const leftAt=left ? after.indexOf(left) : 0;
+      const mappedStart=leftAt<0 ? -1 : leftAt+left.length;
+      const rightAt=right && mappedStart>=0 ? after.indexOf(right,mappedStart) : -1;
+      if(mappedStart>=0 && rightAt>=mappedStart)return [mappedStart,rightAt];
+      if(end<=head)return [start,end];
+      if(start>=oldEnd)return [start+shift,end+shift];
+      return [Math.min(start,head),Math.max(newEnd,end>oldEnd?end+shift:newEnd)];
+    }).filter(([start,end])=>start<end);
   });
 }
-
-// 仅合并当前口述记录。本地完成和删除状态不接受模型覆盖。
-function mergeTasks(note, incoming, input) {
-  const old = note.todos;
-  const updates = new Map();
-  const additions = [];
-  const tombstones = old.filter(t => t.isUserDeleted);
-
-  const matches = (t, c) =>
-    t.aliases.includes(identity(c)) ||
-    (
-      sourceKey(t.originalText).length >= 4 &&
-      sourceKey(t.originalText) === sourceKey(c.originalText)
-    );
-
-  for (const c of incoming) {
-    if (
-      !c.action.trim() ||
-      !c.originalText.trim() ||
-      !input.includes(c.originalText)
-    ) {
-      throw Error('任务来源无法核对，已保留原状态，请重试。');
-    }
-
-    const byId = c.id ? old.find(t => t.id === c.id) : null;
-
-    if (c.id && !byId) {
-      throw Error('AI 返回未知任务 ID，已保留原状态，请重试。');
-    }
-
-    const ranges = sourceRanges(input, c.originalText);
-
-    if (
-      (byId && byId.isUserDeleted) ||
-      tombstones.some(t =>
-        matches(t, c) ||
-        (
-          t.deletedRanges || sourceRanges(input, t.originalText)
-        ).some(([a, b]) =>
-          ranges.some(([x, y]) => x < b && y > a)
-        )
-      )
-    ) {
-      continue;
-    }
-
-    const previous =
-      byId || old.find(t => !t.isUserDeleted && matches(t, c));
-
-    const value = {
-      id: previous?.id || uid(),
-      source: 'ai',
-      action: c.action,
-      object: c.object,
-      targetDate:
-        resolveDate(c.originalText, note.referenceDate) ||
-        standardDate(c.targetDate),
-      originalText: c.originalText,
-      isCompleted: previous?.isCompleted || false,
-      isUserDeleted: false,
-      aliases: [...new Set([
-        ...(previous?.aliases || []),
-        identity(c)
-      ])]
+// 仅合并当前记录；本地状态优先，模型不能覆盖完成或删除标记。
+function mergeTasks(note,incoming,input) {
+  const old=note.todos, updates=new Map(), additions=[];
+  const tombstones=old.filter(t=>t.isUserDeleted);
+  const matches=(t,c)=>t.aliases.includes(identity(c)) ||
+    (sourceKey(t.originalText).length>=4 && sourceKey(t.originalText)===sourceKey(c.originalText));
+  for(const c of incoming) {
+    if(!c.action.trim() || !c.originalText.trim() || !input.includes(c.originalText)) throw Error('任务来源无法核对，已保留原状态，请重试。');
+    const byId=c.id ? old.find(t=>t.id===c.id) : null;
+    if(c.id && !byId) throw Error('AI 返回未知任务 ID，已保留原状态，请重试。');
+    // 删除记录永久保留；ID、规范化动作对象和原始出处任一匹配即拦截。
+    const ranges=sourceRanges(input,c.originalText);
+    if((byId && byId.isUserDeleted) || tombstones.some(t=>matches(t,c) ||
+      (t.deletedRanges || sourceRanges(input,t.originalText)).some(([a,b])=>ranges.some(([x,y])=>x<b && y>a)))) continue;
+    const previous=byId || old.find(t=>!t.isUserDeleted && matches(t,c));
+    const value={
+      id:previous?.id || uid(), source:'ai',
+      action:c.action,object:c.object,targetDate:resolveDate(c.originalText,note.referenceDate) || standardDate(c.targetDate),
+      originalText:c.originalText,isCompleted:previous?.isCompleted || false,
+      isUserDeleted:false,
+      aliases:[...new Set([...(previous?.aliases || []),identity(c)])]
     };
-
-    if (previous) {
-      updates.set(previous.id, value);
-    } else if (!additions.some(t =>
-      identity(t) === identity(value) &&
-      t.targetDate === value.targetDate
-    )) {
-      additions.push(value);
-    }
+    if(previous) updates.set(previous.id,value);
+    else if(!additions.some(t=>identity(t)===identity(value) && t.targetDate===value.targetDate)) additions.push(value);
   }
-
-  // 保留已有任务和删除墓碑，避免模型漏项抹掉用户状态。
-  return old.map(t =>
-    t.isUserDeleted ? t : updates.get(t.id) || t
-  ).concat(additions);
+  // 未在新结果中出现的既有任务也保留，避免模型漏项抹掉用户操作。
+  return old.map(t=>t.isUserDeleted ? t : updates.get(t.id) || t).concat(additions);
 }
 
 async function generate() {
-  if (busy()) return;
-
-  if (!current.raw.trim()) {
-    say('请先口述或输入内容。');
-    return;
-  }
-
-  const profile = readProfile();
-  let url;
-
+  if(busy()) return;
+  if(!current.raw.trim()){say('请先口述或输入内容。');return;}
+  const profile = readProfile(); let url;
   try {
     url = endpoint(profile);
-
-    if (!profile.model) throw Error('请填写模型名称。');
-
-    if (selectedProvider !== 'ollama' && !profile.key) {
-      throw Error('请填写 API Key。');
-    }
-  } catch (e) {
-    $('settings').open = true;
-    say(e.message);
-    return;
-  }
-
-  // 强制仅使用当前选中记录，不读取历史 speechRecords 文本。
-  const target = current;
-  const input = target.raw;
-
-  request = new AbortController();
-  const controller = request;
+    if(!profile.model) throw Error('请填写模型名称。');
+    if(selectedProvider !== 'ollama' && !profile.key) throw Error('请填写 API Key。');
+  } catch(e) { $('settings').open = true; say(e.message); return; }
+  const target = current, input = target.raw;
+  request = new AbortController(); const controller = request;
   let timeout = false;
-
-  const timer = setTimeout(() => {
-    timeout = true;
-    controller.abort();
-  }, 120000);
-
-  lock();
-  say('正在纠错、生成摘要与待办…');
-
+  const timer = setTimeout(()=>{timeout=true;controller.abort();},120000);
+  lock(); say('正在纠错、生成摘要与待办…');
   try {
     const body = {
-      model: profile.model,
-      messages: [
-        {role: 'system', content: SYSTEM},
-        {
-          role: 'user',
-          content: JSON.stringify({
-            recordDate: target.referenceDate,
-            raw: input,
-            existingTasks: target.todos.map(t => ({
-              id: t.id,
-              action: t.action,
-              object: t.object,
-              targetDate: t.targetDate,
-              originalText: t.originalText,
-              isUserDeleted: t.isUserDeleted
-            }))
-          })
-        }
-      ],
-      response_format: {type: 'json_object'},
-      stream: false,
-      max_tokens: 4096
+      model:profile.model,messages:[{role:'system',content:SYSTEM},{role:'user',content:JSON.stringify({recordDate:target.referenceDate,raw:input,existingTasks:target.todos.map(t=>({id:t.id,action:t.action,object:t.object,targetDate:t.targetDate,originalText:t.originalText,isUserDeleted:t.isUserDeleted}))})}],
+      response_format:{type:'json_object'},stream:false,max_tokens:4096
     };
-
-    if (new URL(url).hostname === 'api.deepseek.com') {
-      body.thinking = {type: 'disabled'};
-    }
-
-    const headers = {'Content-Type': 'application/json'};
-    if (profile.key) headers.Authorization = 'Bearer ' + profile.key;
-
-    const res = await fetch(url, {
-      method: 'POST',
-      headers,
-      body: JSON.stringify(body),
-      signal: controller.signal,
-      credentials: 'omit',
-      redirect: 'error',
-      cache: 'no-store',
-      referrerPolicy: 'no-referrer'
-    });
-
-    if (!res.ok) {
-      const errors = {
-        400: '请检查模型和 JSON 输出支持。',
-        401: '密钥无效。',
-        402: '余额不足。',
-        403: '访问被拒绝。',
-        404: '地址或模型不存在。',
-        429: '请求过于频繁。'
-      };
-
-      throw Error(
-        'HTTP ' + res.status + '：' +
-        (errors[res.status] || '服务不可用，请稍后重试。')
-      );
-    }
-
-    const data = await res.json();
-    const choice = data.choices?.[0];
-
-    if (choice?.finish_reason && choice.finish_reason !== 'stop') {
-      throw Error('输出未完整结束，请缩短原文后重试。');
-    }
-
+    if(new URL(url).hostname === 'api.deepseek.com') body.thinking = {type:'disabled'};
+    const headers = {'Content-Type':'application/json'};
+    if(profile.key) headers.Authorization = 'Bearer '+profile.key;
+    const res = await fetch(url,{method:'POST',headers,body:JSON.stringify(body),signal:controller.signal,
+      credentials:'omit',redirect:'error',cache:'no-store',referrerPolicy:'no-referrer'});
+    if(!res.ok) throw Error('HTTP '+res.status+'：'+({400:'请检查模型和 JSON 输出支持。',401:'密钥无效。',402:'余额不足。',403:'访问被拒绝。',404:'地址或模型不存在。',429:'请求过于频繁。'}[res.status] || '服务不可用，请稍后重试。'));
+    const data = await res.json(), choice = data.choices?.[0];
+    if(choice?.finish_reason && choice.finish_reason !== 'stop') throw Error('输出未完整结束，请缩短原文后重试。');
     const content = choice?.message?.content;
-
-    if (typeof content !== 'string' || !content.trim()) {
-      throw Error('接口返回空内容。');
-    }
-
+    if(typeof content !== 'string' || !content.trim()) throw Error('接口返回空内容。');
     let result;
-
-    try {
-      result = JSON.parse(
-        content.trim()
-          .replace(/^\x60{3}(?:json)?\s*/i, '')
-          .replace(/\s*\x60{3}$/, '')
-      );
-    } catch {
-      throw Error('AI 返回的 JSON 无法解析，请手动重试。');
-    }
-
-    if (
-      !result ||
-      typeof result.corrected_raw !== 'string' ||
-      !result.corrected_raw.trim() ||
-      typeof result.summary !== 'string' ||
-      !Array.isArray(result.todos) ||
-      !result.todos.every(t =>
-        t &&
-        ['action', 'object', 'originalText', 'id']
-          .every(k => typeof t[k] === 'string') &&
-        (t.targetDate === null || !!standardDate(t.targetDate))
-      )
-    ) {
+    try { result = JSON.parse(content.trim().replace(/^\x60{3}(?:json)?\s*/i,'').replace(/\s*\x60{3}$/,'')); }
+    catch { throw Error('AI 返回的 JSON 无法解析，请手动重试。'); }
+    if(!result || typeof result.corrected_raw !== 'string' || !result.corrected_raw.trim() ||
+      typeof result.summary !== 'string' || !Array.isArray(result.todos) ||
+      !result.todos.every(t=>t && ['action','object','originalText','id'].every(k=>typeof t[k]==='string') && (t.targetDate===null || !!standardDate(t.targetDate)))) {
       throw Error('AI 返回格式不完整，原文已保留，请重试。');
     }
-
-    const merged = mergeTasks(target, result.todos, input);
-
+    // 页面从 BFCache 恢复并开始新会话后，旧请求不得写入新记录。
+    if(target !== current || controller.signal.aborted) return;
+    const merged = mergeTasks(target,result.todos,input);
     target.beforeCorrection = input;
     target.todos = merged;
-    remapDeletedSources(target, input, result.corrected_raw);
-
-    // rawText 不变，纠错和用户编辑只更新 editedText 对应的 raw。
-    target.raw = result.corrected_raw;
-    target.summary = result.summary;
-    target.organized = true;
-    target.needsReparse = false;
-
+    remapDeletedSources(target,input,result.corrected_raw);
+    target.raw = result.corrected_raw; target.summary = result.summary;
+    target.todos = merged; target.organized = true; target.needsReparse = false;
     $('raw').value = target.raw;
-
     const saved = commit();
-
-    say(saved
-      ? '已纠错并整理完成，请核对关键信息。'
-      : '已整理，但保存失败，请立即导出。'
-    );
-  } catch (e) {
-    say(
-      e.name === 'AbortError'
-        ? timeout
-          ? '请求超时，请点备用按钮重试。'
-          : '已取消，原文已保留。'
-        : e instanceof TypeError
-          ? '连接失败，请检查地址、网络、CORS 和 Ollama 服务；可手动重试。'
-          : e.message
-    );
-  } finally {
-    clearTimeout(timer);
-    request = null;
-    lock();
-  }
+    say(saved ? '已纠错并整理完成，请核对关键信息。' : '已整理，但保存失败，请立即导出。');
+  } catch(e) {
+    say(e.name === 'AbortError' ? (timeout?'请求超时，请点备用按钮重试。':'已取消，原文已保留。') :
+      e instanceof TypeError ? '连接失败，请检查地址、网络、CORS 和 Ollama 服务；可手动重试。' : e.message);
+  } finally { clearTimeout(timer); request = null; lock(); }
 }
-
 $('generate').onclick = generate;
 $('cancel').onclick = () => request?.abort();
 
 function startSpeech(pointerId) {
-  if (busy() || !Speech) return;
-
-  if (!isSecureContext) {
-    say('语音录入需要 HTTPS，请使用已部署的网址。');
-    return;
-  }
-
-  // 每次录音始终创建新记录，绝不追加历史原文。
+  if(busy() || !Speech) return;
+  if(!isSecureContext){say('语音录入需要 HTTPS，请使用已部署的网址。');return;}
+  // 只追加当前激活记录；初始化或手动新建时 current 已是空白记录。
   const r = new Speech();
-  current = fresh();
-  commit();
-  renderEditor();
-
-  const s = {
-    r,
-    pointerId,
-    note: current,
-    parts: new Map(),
-    released: false,
-    ended: false,
-    started: false,
-    cancelled: false,
-    failed: false,
-    finished: false,
-    added: false
-  };
-
-  speechSession = s;
-  r.lang = 'zh-CN';
-  r.continuous = true;
-  r.interimResults = true;
-
-  $('record').classList.add('holding');
-  $('record').setAttribute('aria-pressed', 'true');
-  $('record').textContent = '正在听 · 松开自动整理';
-
-  lock();
+  if(!current) current = fresh();
+  const s = {r,pointerId,note:current,parts:new Map(),released:false,ended:false,started:false,cancelled:false,failed:false,finished:false,added:false};
+  speechSession = s; r.lang = 'zh-CN'; r.continuous = true; r.interimResults = true;
+  $('record').classList.add('holding'); $('record').setAttribute('aria-pressed','true');
+  $('record').textContent = '正在听 · 松开自动整理'; lock();
   say('请说话，首次使用请允许麦克风和语音识别权限。');
-
   r.onstart = () => {
-    if (s.finished) {
-      r.abort();
-      return;
-    }
-
-    s.started = true;
-    if (s.released) stopSpeech(s);
+    if(s.finished) { r.abort(); return; }
+    s.started = true; if(s.released) stopSpeech(s);
   };
-
   r.onresult = e => {
-    if (s.finished) return;
+    if(s.finished || s.note !== current) return;
     let interim = '';
-
-    for (let i = 0; i < e.results.length; i++) {
+    for(let i=0;i<e.results.length;i++) {
       const result = e.results[i];
-
-      if (result.isFinal) {
-        if (!s.parts.has(i)) {
-          const text = result[0].transcript.trim();
-          s.parts.set(i, text);
-
-          if (text) {
-            // 只拼接“本次录音”内部的识别片段。
-            s.note.rawText += (s.note.rawText ? '\n' : '') + text;
-            s.note.raw = s.note.rawText;
-            s.added = true;
-            s.note.needsReparse = true;
-
-            delete s.note.beforeCorrection;
-            $('raw').value = s.note.raw;
-
-            commit();
-            renderResult();
+      if(result.isFinal) {
+        if(!s.parts.has(i)) {
+          const text = result[0].transcript.trim(); s.parts.set(i,text);
+          if(text) {
+            s.note.rawText += (s.note.rawText?'\n':'') + text;
+            // 保留用户修改和 AI 纠错，不能用最初识别文本覆盖 editedText。
+            s.note.raw += (s.note.raw?'\n':'') + text;
+            s.added = true; s.note.needsReparse = true; // 保留已完成状态与删除标记。
+            delete s.note.beforeCorrection; $('raw').value = s.note.raw; commit(); renderResult();
           }
         }
-      } else {
-        interim += result[0].transcript;
-      }
+      } else interim += result[0].transcript;
     }
-
-    $('interim').textContent = interim ? '识别中：' + interim : '';
+    $('interim').textContent = interim ? '识别中：'+interim : '';
   };
-
   r.onerror = e => {
-    if (s.finished) return;
+    if(s.finished) return;
     s.failed = true;
-
-    const errors = {
-      'not-allowed': '语音权限被拒绝，请检查麦克风和 Siri 设置。',
-      'service-not-allowed': '系统不允许语音识别，请使用 Safari 或键盘听写。',
-      'audio-capture': '无法访问麦克风。',
-      'network': '语音网络异常。',
-      'no-speech': '没有识别到语音。',
-      'aborted': '语音已中断。'
-    };
-
-    say(
-      (errors[e.error] || '语音识别失败。') +
-      ' 已有文字保留，可手动整理。'
-    );
+    say(({'not-allowed':'语音权限被拒绝，请检查麦克风和 Siri 设置。','service-not-allowed':'系统不允许语音识别，请使用 Safari 或键盘听写。','audio-capture':'无法访问麦克风。','network':'语音网络异常。','no-speech':'没有识别到语音。','aborted':'语音已中断。'}[e.error] || '语音识别失败。')+' 已有文字保留，可手动整理。');
   };
-
   r.onend = () => {
-    if (s.finished) return;
+    if(s.finished) return;
     s.ended = true;
-
-    if (s.released) {
-      finishSpeech(s);
-    } else if (!s.failed) {
-      say('系统已结束识别，请松手自动整理。');
-    }
+    if(s.released) finishSpeech(s);
+    else if(!s.failed) say('系统已结束识别，请松手自动整理。');
   };
-
-  try {
-    r.start();
-  } catch {
-    s.failed = true;
-    s.ended = true;
-    s.released = true;
-
-    say('无法启动语音识别，请使用 Safari 或键盘听写。');
-    finishSpeech(s);
+  try { r.start(); } catch {
+    s.failed = true; s.ended = true; s.released = true;
+    say('无法启动语音识别，请使用 Safari 或键盘听写。'); finishSpeech(s);
   }
 }
-
 function stopSpeech(s) {
-  if (s.ended || s.finished) return;
-  try {
-    s.r.stop();
-  } catch {
-    // 等待 onstart 后再次停止。
-  }
+  if(s.ended || s.finished) return;
+  try { s.r.stop(); } catch { /* 等待 onstart 后再次停止。 */ }
 }
-
 function releaseSpeech(cancelled = false) {
   const s = speechSession;
-  if (!s || s.released) return;
-
-  s.released = true;
-  s.cancelled = cancelled;
-
-  $('record').classList.remove('holding');
-  $('record').setAttribute('aria-pressed', 'false');
+  if(!s || s.released) return;
+  s.released = true; s.cancelled = cancelled;
+  $('record').classList.remove('holding'); $('record').setAttribute('aria-pressed','false');
   $('record').textContent = '正在接收最后一句…';
-
-  if (!s.failed) {
-    say(cancelled
-      ? '已中断，已确认文字保留。'
-      : '正在确认最后一句，随后自动整理…'
-    );
-  }
-
-  if (s.ended) {
-    finishSpeech(s);
-    return;
-  }
-
+  if(!s.failed) say(cancelled?'已中断，已确认文字保留。':'正在确认最后一句，随后自动整理…');
+  if(s.ended) { finishSpeech(s); return; }
   stopSpeech(s);
-
-  s.timer = setTimeout(() => {
-    if (s.finished) return;
-
-    s.failed = true;
-    s.ended = true;
-
-    try {
-      s.r.abort();
-    } catch {}
-
+  s.timer = setTimeout(()=>{
+    if(s.finished) return;
+    s.failed = true; s.ended = true;
+    try{s.r.abort();}catch{}
     say('语音结束超时，已确认文字保留，请核对后手动整理。');
     finishSpeech(s);
-  }, 10000);
+  },10000);
 }
-
 function finishSpeech(s) {
-  if (s.finished) return;
-
-  s.finished = true;
-  clearTimeout(s.timer);
-
-  if (speechSession === s) speechSession = null;
-
-  $('record').classList.remove('holding');
-  $('record').setAttribute('aria-pressed', 'false');
-  $('record').textContent = '按住说话 · 松开整理';
-  $('interim').textContent = '';
-
-  lock();
-
-  if (!s.cancelled && !s.failed && s.added) {
-    generate();
-  } else if (!s.failed) {
-    say(s.cancelled
-      ? '操作已中断，可手动生成摘要。'
-      : '没有新的识别文字，请重新按住说话。'
-    );
-  }
+  if(s.finished) return;
+  s.finished = true; clearTimeout(s.timer);
+  if(speechSession === s) speechSession = null;
+  $('record').classList.remove('holding'); $('record').setAttribute('aria-pressed','false');
+  $('record').textContent = '按住说话 · 松开整理'; $('interim').textContent = ''; lock();
+  if(!s.cancelled && !s.failed && s.added) generate();
+  else if(!s.failed) say(s.cancelled?'操作已中断，可手动生成摘要。':'没有新的识别文字，请重新按住说话。');
 }
-
 $('record').onpointerdown = e => {
-  if (!e.isPrimary || e.button !== 0 || busy()) return;
-
-  e.preventDefault();
-  $('record').setPointerCapture(e.pointerId);
-  startSpeech(e.pointerId);
+  if(!e.isPrimary || e.button !== 0 || busy()) return;
+  e.preventDefault(); $('record').setPointerCapture(e.pointerId); startSpeech(e.pointerId);
 };
-
-$('record').onpointerup = e => {
-  if (speechSession?.pointerId === e.pointerId) releaseSpeech();
-};
-
-$('record').onpointercancel = e => {
-  if (speechSession?.pointerId === e.pointerId) releaseSpeech(true);
-};
-
-$('record').onlostpointercapture = e => {
-  if (
-    speechSession?.pointerId === e.pointerId &&
-    !speechSession.released
-  ) {
-    releaseSpeech(true);
-  }
-};
-
+$('record').onpointerup = e => { if(speechSession?.pointerId===e.pointerId) releaseSpeech(); };
+$('record').onpointercancel = e => { if(speechSession?.pointerId===e.pointerId) releaseSpeech(true); };
+$('record').onlostpointercapture = e => { if(speechSession?.pointerId===e.pointerId && !speechSession.released) releaseSpeech(true); };
 $('record').oncontextmenu = e => e.preventDefault();
-
 $('record').onkeydown = e => {
-  if (e.code === 'Space' || e.code === 'Enter') {
-    e.preventDefault();
-    if (!e.repeat) startSpeech('keyboard');
-  }
+  if(e.code==='Space' || e.code==='Enter'){e.preventDefault();if(!e.repeat)startSpeech('keyboard');}
 };
-
 $('record').onkeyup = e => {
-  if (e.code === 'Space' || e.code === 'Enter') {
-    e.preventDefault();
-    if (speechSession?.pointerId === 'keyboard') releaseSpeech();
-  }
+  if(e.code==='Space' || e.code==='Enter'){e.preventDefault();if(speechSession?.pointerId==='keyboard')releaseSpeech();}
 };
-
-window.addEventListener('blur', () => releaseSpeech(true));
-
+window.addEventListener('blur',()=>releaseSpeech(true));
 function refreshFromDevice() {
-  // 回前台读取真实持久化数据，不依赖 iOS 后台内存。
-  if (!busy() && !dirty && !storageBlocked) {
+  // 无后台假设：每次回前台读存储。正在录入/请求时不覆盖当前事务。
+  if(!busy() && !dirty && !storageBlocked) {
     try {
-      const loaded = readNotes();
-      const id = current.id;
-
-      notes = loaded;
-      current =
-        notes.find(n => n.id === id) ||
-        notes.find(n => n.id === selectedRecordId) ||
-        (current.raw ? notes[0] || fresh() : current);
-
-      $('raw').value = current.raw;
-      $('hideDone').checked =
-        !!JSON.parse(localStorage.getItem(PREFS) || '{}').hideDone;
-    } catch {
-      say('本地状态读取失败，保留当前内容，请导出备份。');
-    }
+      const loaded=readNotes(), id=current.id;
+      notes=loaded;
+      // 只能恢复本次会话已激活的 ID，不能按上次持久化选择偷加载历史。
+      current=notes.find(n=>n.id===id) || (current.raw ? fresh() : current);
+      $('raw').value=current.raw;
+      $('hideDone').checked=!!JSON.parse(localStorage.getItem(PREFS)||'{}').hideDone;
+    } catch { say('本地状态读取失败，保留当前内容，请导出备份。'); }
   }
-
-  if (!drag) {
-    renderResult();
-    renderHistory();
-  }
-
+  if(!drag) { renderResult(); renderHistory(); }
   scheduleDateRefresh();
 }
-
 let midnightTimer;
-
 function scheduleDateRefresh() {
   clearTimeout(midnightTimer);
-
-  const now = new Date();
-  const next = new Date(
-    now.getFullYear(),
-    now.getMonth(),
-    now.getDate() + 1
-  );
-
-  midnightTimer = setTimeout(() => {
-    if (!document.hidden && !drag) renderResult();
+  const now=new Date(), next=new Date(now.getFullYear(),now.getMonth(),now.getDate()+1);
+  midnightTimer=setTimeout(()=>{
+    if(!document.hidden && !drag) renderResult();
     scheduleDateRefresh();
-  }, Math.max(1000, next.getTime() - now.getTime() + 100));
+  },Math.max(1000,next.getTime()-now.getTime()+100));
 }
-
-window.addEventListener('pageshow', refreshFromDevice);
-window.addEventListener('focus', refreshFromDevice);
-
-window.addEventListener('storage', e => {
-  if (e.key === DATA || e.key === PREFS) refreshFromDevice();
-});
-
-window.addEventListener('pagehide', () => {
-  releaseSpeech(true);
-  if (dirty) persist();
-});
-
-document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {
+window.addEventListener('pageshow',e=>{
+  if(e.persisted) {
     releaseSpeech(true);
-    if (dirty) persist();
-  } else {
-    refreshFromDevice();
+    if(request) request.abort();
+    if(!dirty || persist()) { current=fresh(); renderEditor(); }
   }
+  refreshFromDevice();
 });
-
-let lastDeviceDay = localDate();
-
-setInterval(() => {
-  const today = localDate();
-
-  if (!document.hidden && today !== lastDeviceDay) {
-    lastDeviceDay = today;
-    if (!drag) renderResult();
+window.addEventListener('focus',refreshFromDevice);
+window.addEventListener('storage',e=>{if(e.key===DATA || e.key===PREFS)refreshFromDevice();});
+window.addEventListener('pagehide',()=>{releaseSpeech(true);if(dirty)persist();});
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden){releaseSpeech(true);if(dirty)persist();}
+  else refreshFromDevice();
+});
+// 前台设备手动改日期/时区时也校验；不依赖 iOS 后台定时器。
+let lastDeviceDay=localDate();
+setInterval(()=>{
+  const today=localDate();
+  if(!document.hidden && today!==lastDeviceDay) {
+    lastDeviceDay=today;
+    if(!drag) renderResult();
     scheduleDateRefresh();
   }
-}, 15000);
-
-window.addEventListener('beforeunload', e => {
-  if (dirty) {
-    e.preventDefault();
-    e.returnValue = '';
-  }
-});
+},15000);
+window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
 
 $('export').onclick = () => {
-  if (!notes.length) {
-    say('没有可导出的记录。');
-    return;
-  }
-
-  const text = notes.map(n => [
-    '随口记 · ' + new Date(n.created).toLocaleString('zh-CN'),
-    '更新时间：' + new Date(n.updated).toLocaleString('zh-CN'),
-    '\n【本次语音最初识别文本】',
-    n.rawText || '无（手动输入记录）',
-    '\n【当前编辑文本】',
-    n.raw,
-    ...(n.beforeCorrection
-      ? ['\n【最近一次纠错前文本】', n.beforeCorrection]
-      : []),
-    '\n【简短摘要】',
-    n.summary || '尚未生成',
-    '\n【待办清单】',
-    activeTasks(n).length
-      ? activeTasks(n).map(t =>
-          (t.isCompleted ? '[x] ' : '[ ] ') + taskText(t)
-        ).join('\n')
-      : '无'
-  ].join('\n')).join('\n\n' + '—'.repeat(30) + '\n\n');
-
-  const url = URL.createObjectURL(
-    new Blob(['\ufeff' + text], {type: 'text/plain;charset=utf-8'})
-  );
-
-  const a = document.createElement('a');
-  a.href = url;
-  a.download =
-    '随口记-' + new Date().toISOString().slice(0, 10) + '.txt';
-
-  document.body.append(a);
-  a.click();
-  a.remove();
-
-  setTimeout(() => URL.revokeObjectURL(url), 60000);
+  if(!notes.length){say('没有可导出的记录。');return;}
+  const text = notes.map(n=>[
+    '随口记 · '+new Date(n.created).toLocaleString('zh-CN'),
+    '更新时间：'+new Date(n.updated).toLocaleString('zh-CN'),
+    '\n【本次语音最初识别文本】',n.rawText || '无（手动输入记录）',
+    '\n【当前编辑文本】',n.raw,
+    ...(n.beforeCorrection?['\n【最近一次纠错前文本】',n.beforeCorrection]:[]),
+    '\n【简短摘要】',n.summary || '尚未生成',
+    '\n【待办清单】',activeTasks(n).length?activeTasks(n).map(t=>(t.isCompleted?'[x] ':'[ ] ')+taskText(t)).join('\n'):'无'
+  ].join('\n')).join('\n\n'+'—'.repeat(30)+'\n\n');
+  const url = URL.createObjectURL(new Blob(['\ufeff'+text],{type:'text/plain;charset=utf-8'}));
+  const a = document.createElement('a'); a.href = url;
+  a.download = '随口记-'+new Date().toISOString().slice(0,10)+'.txt';
+  document.body.append(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),60000);
   say('已导出全部记录，可在 Safari 下载或“文件”中查看。');
 };
-
-showProfile();
-
-current =
-  notes.find(n => n.id === selectedRecordId) ||
-  [...notes].sort((a, b) => b.updated.localeCompare(a.updated))[0] ||
-  fresh();
-
-$('settings').open = false;
-$('historyPanel').open = false;
-
-renderEditor();
-lock();
-scheduleDateRefresh();
-
-if (!Speech && !storageBlocked) {
-  say('当前环境不支持语音识别，请展开原文输入或使用键盘听写。');
-}
-
-// 保留项目已有 sw.js、manifest.json 和图标。
-if ('serviceWorker' in navigator && isSecureContext) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js', {
-      updateViaCache: 'none'
-    }).then(async () => {
+// 每次完整加载/刷新均是新会话；旧记录只进入历史，不自动选中。
+showProfile(); current = fresh();
+$('settings').open=false; $('historyPanel').open=false;
+renderEditor(); lock(); scheduleDateRefresh();
+if(!Speech && !storageBlocked) say('当前环境不支持语音识别，请展开原文输入或使用键盘听写。');
+// 继续使用项目现有的 sw.js、manifest.json 和图标，保留离线缓存。
+if('serviceWorker' in navigator && isSecureContext) {
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(async()=>{
+      // 更新当前项目已有的离线页面副本，不缓存 API 请求或密钥。
       try {
         await navigator.serviceWorker.ready;
-
-        // 避开旧 Service Worker 对静态 index.html 的缓存优先规则。
-        const response = await fetch(
-          './index.html?refresh=' + Date.now(),
-          {cache: 'no-store'}
-        );
-
-        if (
-          response.ok &&
-          response.headers.get('content-type')?.includes('text/html')
-        ) {
+        // 查询参数避开旧 Service Worker 的静态资源缓存优先规则。
+        const response = await fetch('./index.html?refresh='+Date.now(),{cache:'no-store'});
+        if(response.ok && response.headers.get('content-type')?.includes('text/html')) {
           const keys = await caches.keys();
-
-          for (const key of keys.filter(k =>
-            k.startsWith('suikouji-shell-')
-          )) {
+          for(const key of keys.filter(k=>k.startsWith('suikouji-shell-'))) {
             const cache = await caches.open(key);
-
-            await cache.put(
-              new URL('./index.html', location.href).href,
-              response.clone()
-            );
+            await cache.put(new URL('./index.html',location.href).href,response.clone());
           }
         }
-      } catch {
-        // 离线时保留已有缓存，不缓存 API 请求或密钥。
-      }
-    }).catch(() => {
+      } catch { /* 离线时保留已有缓存。 */ }
+    }).catch(()=>{
       say('离线缓存注册失败，请检查 sw.js；联网编辑仍可使用。');
     });
   });
